@@ -1,0 +1,5 @@
+"Reference","Value","Datasheet","Footprint","Qty","DNP"
+"D1","LED_RED","~","layout:LED_0603_Symbol_on_F.SilkS","1",""
+"J1","Conn_01x02","~","Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical","1",""
+"R1","105","~","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","1",""
+"SW1","SW_Push","~","Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile","1",""
