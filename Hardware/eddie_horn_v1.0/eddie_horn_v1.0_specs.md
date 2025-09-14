@@ -7,16 +7,13 @@ Eddie's awesome horn board
 - It replaces any ad hoc wiring or manual horn activation setup.
 - It ensures reliable 24V/150mA switching per horn with simple GPIO control.
 - Other board integration:
-
   - Board 1 (CAN)
   - Board 2 (USB)
-- Wiki page: \[add link to page]
 
 # High-Level Requirements
 
 - No microcontroller is used on this board.
 - Primary features:
-
   - **Horn On/Off Control**: Accepts a digital GPIO input to switch horns.
   - **Horn Output**: Provides 24V at 150mA for each horn, connected in series.
   - Debug capability: optional manual pushbutton to trigger horn output.
