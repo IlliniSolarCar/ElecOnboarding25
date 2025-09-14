@@ -30,16 +30,16 @@ Eddie's awesome horn board
 # Connectors
 
 - General requirements: low-profile, min. 1A current capacity.
-- Power In (KK 2.54)
+- Power In (KK 2.54) (1x3, actually)
   - GND
   - +24V (from LV Bus)
-- Horn Control (KK 2.54)
+- Horn Control (KK 2.54) (1x2)
   - GND
   - Horn Enable (digital GPIO)
-- Horn Out 1 (KK 2.54)
+- Horn Out 1 (KK 2.54) (1x2)
   - GND
   - Horn+ (24V @ 150mA)
-- Horn Out 2 (KK 2.54)
+- Horn Out 2 (KK 2.54) (1x2)
   - GND
   - Horn+ (24V @ 150mA)
 
@@ -59,8 +59,7 @@ Eddie's awesome horn board
 
 ## Test Points
 
-- Recommended test points:
-
+- Some possible test points:
   - 24V in
   - GND
   - Horn Control GPIO
