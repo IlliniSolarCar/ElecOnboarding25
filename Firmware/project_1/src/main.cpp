@@ -27,6 +27,11 @@ void checkCANController() {
     common.checkCANController();
 }
 
+//blink led1
+void blink(){
+	led1.write(!led1.read());
+}
+
 /*
  * This is where basic, one-time configuration code is run before entering
  * normal operation. It is recommended that you keep your configuration
@@ -36,6 +41,8 @@ void checkCANController() {
  * If you have global variables that need to be initialized, here would
  * be a good place to do it.
  */
+
+
 void setup() {
 
 	//set up the CAN interrupts and handling.
@@ -48,6 +55,9 @@ void setup() {
 	//algorithm / purpose of this board such as the heartbeat.
 	timing.addCallback(BRIZO_CAN::DEMO_HEART.RATE / 2, heartbeat);
 	timing.addCallback(CHECK_CAN_RATE_US, checkCANController);
+
+	//alternate method :p
+	//timing.addCallback(BLINK_RATE, blink);
 
 	bool wdt_reset;
 	//start the timing and check for wdt caused reset
@@ -97,6 +107,7 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	blink();
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
