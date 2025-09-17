@@ -11,6 +11,7 @@
 		(title "prog1")
 		(date "2025-09-12")
 		(rev "1.0")
+		(company "Illini Solar Car")
 		(comment 1 "Designed By: Vedha Garapati")
 	)
 	(layers
