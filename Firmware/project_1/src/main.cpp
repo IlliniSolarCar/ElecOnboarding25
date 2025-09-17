@@ -5,6 +5,7 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include <setup.h>
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -94,9 +95,25 @@ int main() {
         	//total messages. Do nothing for irrelevant messages
         	common.toggleReceiveCANLED();
         }
+        
+        TIME = pont.read();
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        
+        if(timing.tickThreshold(last_task_1_time, TIME)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	if (led4.read() == 0)
+        	{
+        		led4.write(1);
+        	}
+        	else
+        	{
+        		led4.write(0);
+        	}
+        	
+        	
+        	
+
+        	
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
