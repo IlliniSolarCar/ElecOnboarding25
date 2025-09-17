@@ -41,7 +41,7 @@ void setup() {
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
-	common.setupLEDs(&led1, &led2, &led3, &led4);
+	common.setupLEDs(&led1, &led2, &led3, &led4, &onboardingLED);
 
 	//Set Callbacks:
 	//These are side tasks (up to 8) that are run independently of the main
@@ -52,6 +52,9 @@ void setup() {
 	bool wdt_reset;
 	//start the timing and check for wdt caused reset
 	common.startTimingCommon(&timing, &wdt_reset);
+
+	//PROJECT 1 - throwing this in here as example of how to use timing.addCallback
+	// timing.addCallback(TASK_1_RATE_US, blinkOnboardingLED);
 
 	//if watchdog caused reset do something (probably log on CAN)
 	if(wdt_reset){
@@ -69,6 +72,15 @@ void shutdown_method() {
 
 	while(1) {
 		wdt.feed();
+	}
+}
+
+void blinkOnboardingLED() {
+	int state = onboardingLED.read();
+	if (state == 0) {
+		onboardingLED.write(1);
+	} else {
+		onboardingLED.write(0);
 	}
 }
 
@@ -97,6 +109,7 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+					blinkOnboardingLED();
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
