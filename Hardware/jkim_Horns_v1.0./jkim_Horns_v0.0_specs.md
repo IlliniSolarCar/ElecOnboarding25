@@ -3,61 +3,38 @@
 > A well-designed board specification should also contain enough information that a reasonably experienced board designer could read the project requirements and design the PCB from scratch. The implementation details should be left up to the person that will actually be designing and making the board.
 
 
-# Board Name
+# Horn Breakout Board
 **Board Requirements**
 
 
 ## Overview and Description
-- What is the primary function of this board?
-- What does this board replace?
-- One or two more bullets (if necessary) talking about other things this board does
-- Other board integration (List other boards and communication protocols)
-	- Board 1 (CAN)
-	- Board 2 (USB)
+The primary function of this board is to power the electronic horn.
 - Wiki page: [add link to page]
 
 ## High-Level Requirements
-- Microcontroller (list microcontroller if the board has one)
-	- Hyperlinked microcontroller name
-		- MCU must be either LPC154X (USB-enabled) or LPC151X (no USB) unless there is a necessary reason to use something else
-	- List any specific configuration requirements 
-	- How will this board be programmed?
-	- List any buttons or switches that control signals to or from the microcontroller
-- List any features this board must have
-	- Describe each feature in a general way
-		- (Optional) Describe any requirements this feature might need as open-ended as possible
+- A Horn On/Off which will be a digital signal for whether or not it should be on
+- A Horn Output which will output 24V at 150mA
 
 ## Communication Protocols
-- List each communication protocol used to send data to/from other systems or boards
-	- Does this board need external components to process data using this protocol?
-	- List any requirements needed to properly implement this protocol on the board
-- Do not list communication protocols that will be used to connect different components within this PCB unless there is a reason to restrict the board design to a specific protocol
+A digital GPIO will be used to switch the horn. 
 
 ## Connectors
- - List any general requirements for connectors here (e.g. no through-hole, low-profile, minimum 1A current capacity, etc.)
- - Then list each connector, specific type/requirements, and pinout such as:
+There are 4 connectors on this board. 
  - Power In (KK 2.54)
 	- GND
-	- +12V
-	- GND
+	- +24V
+- Horn Controll
+- Horn Out (2x)
+	- Linked in Series
 
 ## ICs
-- Only list specific ICs if the board require this specific component to work
-- If you do list an IC here, use the following format:
-- Component part number
-	- Datasheet (must be direct hyperlink to datasheet)
-	- One-line description of part
-	- Communication protocols used (if any)
+There are no ICs for this board
 
 ## Buttons/Switches
-- If the board needs buttons, describe what they do and how they will connect to the board
+A button can be added to debug the board
 
 ## Power System
-- List each source that the board will need to function within the scope of this document
-	- Where does this voltage originate?
-	- List what protection this power supply needs
-	- List any other requirements for this rail
-- List specific details in the wiki documentation
+- 24V from the LV bus
 
 ## Test Points
 - Which signals should have test points?
