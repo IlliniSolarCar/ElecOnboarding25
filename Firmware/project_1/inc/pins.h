@@ -44,7 +44,7 @@ extern DigitalOut ledblink;
  */
 
 // PROJECT 2 - You can declare a AnalogIn object here
-
+extern AnalogIn POT_LEDBLINK;
 
 /*
  * BOARD SPECIFIC PIN OBJECT DECLARATIONS

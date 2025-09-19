@@ -95,7 +95,7 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, BLINK_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, BLINK_RATE_US*POT_LEDBLINK.read())){
         	if(ledblink.read() == 0){
         		ledblink.write(1);
         	}
