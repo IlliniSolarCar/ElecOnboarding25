@@ -10,7 +10,10 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
-
+//includded pins.h and setup.h so that main.cpp knows what led5 is, and to
+//make it change states to blink. included setup.h so that the program recognizes the macro task_1_rate_us
+#include <setup.h>
+#include <pins.h>
 
 /*
  * This is an example function. It blinks the heartbeat LED and sends
@@ -92,15 +95,25 @@ int main() {
         	//toggle the CAN receive LED for only the messages you need to
         	//receive for this board to function. This should be only a few
         	//total messages. Do nothing for irrelevant messages
+
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+       // if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
-        }
+        //	led5= !led5;
+        //}
 
         //PROJECT 2 - use the potentiometer to change the blink rate
+	//turned the previous if statement into a comment, made the blink rate a variable that is a function of the potentiometer value, which will be something from 0.0to 0.1
+        float potentiometer_value = potentiometer1.read();
+        uint32_t current_blink_rate_us = 50000 + (potentiometer_value * TASK_1_RATE_US);
+        if (timing.tickThreshold(&last_task_1_time, current_blink_rate_us)){
+        	led5=!led5;
+        }
 
+
+}
 
 	}
 
