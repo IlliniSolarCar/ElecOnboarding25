@@ -40,7 +40,7 @@ void checkCANController() {
  * be a good place to do it.
  */
 void setup() {
-
+	// yes this works
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
