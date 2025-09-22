@@ -1213,7 +1213,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
 			(at 93.472 68.58 90)
 			(effects
 				(font
@@ -1349,7 +1349,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "layout:LED_0603_Symbol_on_F.SilkS"
 			(at 95.25 76.2 0)
 			(effects
 				(font
@@ -1483,7 +1483,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile"
 			(at 83.82 59.69 0)
 			(effects
 				(font
@@ -1550,7 +1550,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_CLIK-Mate_502382-0270_1x02-1MP_P1.25mm_Vertical"
 			(at 64.77 78.74 0)
 			(effects
 				(font
