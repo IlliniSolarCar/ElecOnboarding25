@@ -103,12 +103,19 @@ int main() {
         if(timing.tickThreshold(last_task_1_time,  &LED_BLINK_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
         	if(DigitalOut.read()==1){
-        		DigitalOut.write(0);
+        		DigitalOut.write(led5, 0);
         	}
         	else{
-        		DigitalOut.write(1);
+        		DigitalOut.write(led5, 1);
         	}
         }
+
+        float value = analogout_read(resistor); // will output: 0 - 1
+
+        &LED_BLINK_RATE_US = 100 + value * (1000000-100);
+
+
+
 
 
         //PROJECT 2 - use the potentiometer to change the blink rate

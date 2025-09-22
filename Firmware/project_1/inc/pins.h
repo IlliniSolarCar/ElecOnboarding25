@@ -27,6 +27,7 @@
 #define P_LED4 P0_7
 // PROJECT 1 - You can define a pin macro here
 #define P_LED5 P0_4
+#define P_Resistor P0_11
 
 /*
  * COMMON PIN OBJECT DECLARATIONS
@@ -39,11 +40,15 @@ extern DigitalOut led4;
 // PROJECT 1 - You can declare a DigitalOut object here
 extern DigitalOut led5;
 
+
+
+
 /*
  * BOARD SPECIFIC PINS
  */
 
 // PROJECT 2 - You can declare a AnalogIn object here
+extern AnalogIn resistor;
 
 
 /*
