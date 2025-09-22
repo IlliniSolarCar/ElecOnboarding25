@@ -84,10 +84,11 @@ int main() {
 	bool shutdown = false;
 	// Main functionality
 	while (!shutdown) {
-
+		
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
         bool overflow;
         uint32_t now = common.loopTime(&timing, &overflow);
+        
 
         //clear CAN Buffer
         while(!common.readCANMessage(msg)) {
@@ -97,6 +98,10 @@ int main() {
         	//total messages. Do nothing for irrelevant messages
         	common.toggleReceiveCANLED();
         }
+        // project 2
+        float pot_val = pot.read();
+        uint32_t blink = pot_val * BLINK_RATE;
+        		
 
         if(timing.tickThreshold(last_task_1_time, BLINK_RATE)){
         	//PROJECT 1 - add code here to actually make the LED blink
