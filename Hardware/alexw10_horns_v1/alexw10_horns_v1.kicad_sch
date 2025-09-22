@@ -1979,6 +1979,12 @@
 		(uuid "042355c2-6c21-49a4-8818-8a4d9d46f277")
 	)
 	(junction
+		(at 134.62 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "069e75ed-a857-41a7-9bce-660b16c88ef2")
+	)
+	(junction
 		(at 45.72 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2152,6 +2158,12 @@
 		(color 0 0 0 0)
 		(uuid "e5a6ed90-1c6c-41da-a55b-fba9ba5e9d62")
 	)
+	(junction
+		(at 134.62 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb637d5c-5ac1-43f6-a653-b39cec460675")
+	)
 	(wire
 		(pts
 			(xy 45.72 154.94) (xy 45.72 152.4)
@@ -2254,6 +2266,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 124.46) (xy 134.62 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ff228e9-a4c1-40fb-b24b-a6d5a61e2d74")
+	)
+	(wire
+		(pts
 			(xy 113.03 101.6) (xy 125.73 101.6)
 		)
 		(stroke
@@ -2301,16 +2323,6 @@
 			(type default)
 		)
 		(uuid "3aa8e14f-d610-45c9-a2d1-29d5d51b7158")
-	)
-	(wire
-		(pts
-			(xy 172.72 116.84) (xy 147.32 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b46e0a9-f85d-4690-881c-a2f2c9cc4228")
 	)
 	(wire
 		(pts
@@ -2371,6 +2383,26 @@
 			(type default)
 		)
 		(uuid "4dd8d071-94d2-4195-9a93-bdf0483fba9b")
+	)
+	(wire
+		(pts
+			(xy 134.62 114.3) (xy 172.72 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "512d9e8a-18d4-4e94-954f-f5532748ac43")
+	)
+	(wire
+		(pts
+			(xy 134.62 124.46) (xy 172.72 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52b0126f-0259-4ebc-aec7-8bb693123271")
 	)
 	(wire
 		(pts
@@ -2544,13 +2576,13 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 124.46) (xy 172.72 124.46)
+			(xy 147.32 121.92) (xy 172.72 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "946fb451-194d-4896-8360-eb0a17b97778")
+		(uuid "93ce3eee-84a1-40f3-8f9a-16c6c3983aa7")
 	)
 	(wire
 		(pts
@@ -2614,7 +2646,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 121.92) (xy 134.62 125.73)
+			(xy 134.62 121.92) (xy 134.62 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2631,16 +2663,6 @@
 			(type default)
 		)
 		(uuid "add8e02a-72c2-4bb8-8e52-a26c8bb82e5c")
-	)
-	(wire
-		(pts
-			(xy 134.62 114.3) (xy 172.72 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1d098bc-0c2b-44e6-be47-3f01d5b7f5c5")
 	)
 	(wire
 		(pts
@@ -2714,6 +2736,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 116.84) (xy 172.72 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc6b1de6-c755-43ee-b424-b0db9685cd6f")
+	)
+	(wire
+		(pts
 			(xy 97.79 139.7) (xy 97.79 143.51)
 		)
 		(stroke
@@ -2721,16 +2753,6 @@
 			(type default)
 		)
 		(uuid "cd977aa7-e0bd-4ed5-9cc7-a2ea3610ae61")
-	)
-	(wire
-		(pts
-			(xy 147.32 121.92) (xy 172.72 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3bd760e-c21e-4569-96ef-9e558720b6f8")
 	)
 	(wire
 		(pts
@@ -2947,6 +2969,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Aillen"
+			(at 97.79 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "0805B104K500BD"
+			(at 97.79 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8b385275-efa7-4898-a7a5-a22a6201cf8c")
 		)
@@ -3009,6 +3049,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 113.03 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Aillen"
+			(at 113.03 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "0805B104K500BD"
 			(at 113.03 81.28 0)
 			(effects
 				(font
@@ -3087,6 +3145,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Panasonic Electronic Components"
+			(at 67.31 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "ERJ-6GEYJ2R4V"
+			(at 67.31 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5c487254-1215-4a64-b165-65a95c4d1c60")
 		)
@@ -3149,6 +3225,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 90.17 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Aillen"
+			(at 90.17 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "0805B104K500BD"
 			(at 90.17 81.28 0)
 			(effects
 				(font
@@ -3227,6 +3321,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Aillen"
+			(at 101.6 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "0805B105K500CC"
+			(at 101.6 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "34694b6a-0e9e-4dc6-9e02-39b142a1e635")
 		)
@@ -3297,6 +3409,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Littelfuse"
+			(at 134.62 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "LVR100S-240"
+			(at 134.62 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7c18f843-030e-474c-a2b4-d2e03e33699a")
 		)
@@ -3314,8 +3444,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_SPDT")
-		(at 78.74 137.16 0)
-		(mirror y)
+		(at 78.74 137.16 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3323,7 +3452,7 @@
 		(dnp no)
 		(uuid "3fee3508-0bb5-4ad5-9385-fcac2b9bd853")
 		(property "Reference" "SW1"
-			(at 78.74 144.78 0)
+			(at 78.74 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3331,7 +3460,7 @@
 			)
 		)
 		(property "Value" "SW_Push_SPDT"
-			(at 78.74 142.24 0)
+			(at 78.74 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3357,6 +3486,24 @@
 			)
 		)
 		(property "Description" "Momentary Switch, single pole double throw"
+			(at 78.74 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "E-switch"
+			(at 78.74 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "800UDP8P1A1M6RE "
 			(at 78.74 137.16 0)
 			(effects
 				(font
@@ -3504,6 +3651,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Aillen"
+			(at 101.6 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "0805B104K500BD"
+			(at 101.6 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "84291650-b36c-482e-ac0a-0e688ae0cf58")
 		)
@@ -3521,7 +3686,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 177.8 121.92 0)
+		(at 177.8 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3529,7 +3694,7 @@
 		(dnp no)
 		(uuid "62d701af-8888-4866-bb7c-292aad52f652")
 		(property "Reference" "J3"
-			(at 180.34 121.9199 0)
+			(at 180.34 114.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3538,7 +3703,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 180.34 124.4599 0)
+			(at 180.34 116.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3547,7 +3712,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
-			(at 177.8 121.92 0)
+			(at 177.8 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3556,7 +3721,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.8 121.92 0)
+			(at 177.8 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3565,7 +3730,25 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 177.8 121.92 0)
+			(at 177.8 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 177.8 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "AE-6410-3"
+			(at 177.8 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3635,6 +3818,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 107.95 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 107.95 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "RC2010JK-072K4L"
 			(at 107.95 119.38 0)
 			(effects
 				(font
@@ -3713,6 +3914,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Stackpole Electronics Inc"
+			(at 45.72 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "RMCF0805FT130R"
+			(at 45.72 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c78d2a72-140c-4427-b432-355493229e3f")
 		)
@@ -3756,7 +3975,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1812_4532Metric"
+		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
 			(at 134.62 118.11 0)
 			(effects
 				(font
@@ -3793,6 +4012,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 134.62 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Comchip Technology"
+			(at 134.62 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "ACURN101-HF "
 			(at 134.62 118.11 0)
 			(effects
 				(font
@@ -3869,6 +4106,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Molex"
+			(at 50.8 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "AE-6410-2"
+			(at 50.8 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ed340560-8dcf-4e06-8bae-2b01b09a628c")
 		)
@@ -3915,7 +4170,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_8x5.4"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
 			(at 126.6952 85.09 0)
 			(effects
 				(font
@@ -3934,6 +4189,24 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
+			(at 125.73 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nichicon"
+			(at 125.73 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "UCD1E101MCL1GS"
 			(at 125.73 81.28 0)
 			(effects
 				(font
@@ -4004,6 +4277,24 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 107.95 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Visual Communications Company - VCC"
+			(at 107.95 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "CMD15-21VRD/TR8"
 			(at 107.95 128.27 0)
 			(effects
 				(font
@@ -4148,6 +4439,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Aillen"
+			(at 125.73 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "1206W106K250PB"
+			(at 125.73 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ce1c9af3-087b-4279-973f-fcc1379e05aa")
 		)
@@ -4210,6 +4519,24 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 45.72 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Everlight Electronics Co Ltd"
+			(at 45.72 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "QTLP650D4TR/QT15-21SYGD/S530-E2/TR8"
 			(at 45.72 158.75 0)
 			(effects
 				(font
@@ -4286,6 +4613,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Molex"
+			(at 27.94 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "AE-6410-3"
+			(at 27.94 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2fb0d98f-9f87-4941-8663-a0718e920829")
 		)
@@ -4346,6 +4691,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 92.71 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 92.71 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "WFC08051L000FE66"
 			(at 92.71 139.7 0)
 			(effects
 				(font
@@ -4424,6 +4787,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Aillen"
+			(at 90.17 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "0805B105K500CC"
+			(at 90.17 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2dfbce04-17a5-4f1a-a3ff-a87eb8c42638")
 		)
@@ -4494,6 +4875,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Vishay Siliconix"
+			(at 132.08 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "IRFR010PBF"
+			(at 132.08 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "8f1ba21c-4a5b-47f8-a340-0db92db9d09c")
 		)
@@ -4514,7 +4913,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 177.8 114.3 0)
+		(at 177.8 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4522,7 +4921,7 @@
 		(dnp no)
 		(uuid "c904dca2-52f1-45a1-b8bf-8c990f662c6e")
 		(property "Reference" "J4"
-			(at 180.34 114.2999 0)
+			(at 180.34 121.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4531,7 +4930,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 180.34 116.8399 0)
+			(at 180.34 124.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4540,7 +4939,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
-			(at 177.8 114.3 0)
+			(at 177.8 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4549,7 +4948,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.8 114.3 0)
+			(at 177.8 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4558,7 +4957,25 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 177.8 114.3 0)
+			(at 177.8 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 177.8 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "AE-6410-3"
+			(at 177.8 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4768,6 +5185,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Aillen"
+			(at 113.03 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "1206W106K250PB"
+			(at 113.03 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "54c24434-794e-4ac7-b790-672982cb3615")
 		)
@@ -4830,6 +5265,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 67.31 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TE Connectivity Passive Product"
+			(at 67.31 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part number" "CRG0805F15K"
 			(at 67.31 120.65 0)
 			(effects
 				(font

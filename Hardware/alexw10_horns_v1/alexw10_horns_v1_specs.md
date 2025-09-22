@@ -15,7 +15,7 @@ horn driver/switch
 
 ## High-Level Requirements
 
-take in simple digital signal for whether horn should be on or not
+take in simple digital signal from microcontroller for whether horn should be on or not
 signal controls 24V 150mA output
 digital GPIO to switch horn
 
@@ -35,12 +35,7 @@ make this easy to debug, don't fry the board, connects to 24V LV bus
 
 
 ## Communication Protocols
-- List each communication protocol used to send data to/from other systems or boards
-	- Does this board need external components to process data using this protocol?
-	- List any requirements needed to properly implement this protocol on the board
-- Do not list communication protocols that will be used to connect different components within this PCB unless there is a reason to restrict the board design to a specific protocol
-
-basic digital high/low signal
+none
 
 
 ## Connectors
@@ -48,16 +43,21 @@ basic digital high/low signal
  - Then list each connector, specific type/requirements, and pinout such as:
 
 
+
  - Power In: 1x3 pin connector, GND +24 GND, nominal 150mA
  - Control: Signal and GND
- - Outputs: 2x 1x2 pin connectors, one horn (power/gnd) for each ofthe connectors, nominally 150mA
+ - Outputs: 2x 1x2 pin connectors, one horn (power/gnd) for each ofthe connectors, nominally 150mA, direction doesnt matter
+ - this design uses molex connectors kk-254 connectors but they can be substituted for whatever connector is actually needed, holes for connectors
+ - are 0.1 inch spaced
 
 ## ICs
 - Only list specific ICs if the board require this specific component to work
 none
 
 ## Buttons/Switches
-none
+1 push button - when the button is not pushed down, there is normal operation in that a high from the microcontroller will make the horn sound
+- when the button is pushed down, the microcontroller signal is disconnected, and 3.3V from a voltage divider is applied to the gate of the mosfet, which makes the horn sound
+- horn sounds whenever the button is pushed down, when but is not pushed down the horn sounding depends on the microcontroller
 
 ## Power System
 voltage comes from 24V LV bus, we will use 2A fuse as well as a flyback diode
@@ -66,4 +66,4 @@ voltage comes from 24V LV bus, we will use 2A fuse as well as a flyback diode
 Have test points for both the signal and the power
 
 ## LED Indicators
-- List any functions that should have an LED to indicate they are doing something. Include the 4 default debug LEDs for ISC boards
+- red LED on board indicates 24V is plugged in, green led indicates the microcontroller signal is reaching the input connector of the board
