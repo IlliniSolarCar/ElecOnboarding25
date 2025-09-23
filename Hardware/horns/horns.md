@@ -24,16 +24,6 @@ HORNS
 ## High-Level Requirements
 NONE
 
-- Microcontroller (list microcontroller if the board has one)
-	- Hyperlinked microcontroller name
-		- MCU must be either LPC154X (USB-enabled) or LPC151X (no USB) unless there is a necessary reason to use something else
-	- List any specific configuration requirements 
-	- How will this board be programmed?
-	- List any buttons or switches that control signals to or from the microcontroller
-- List any features this board must have
-	- Describe each feature in a general way
-		- (Optional) Describe any requirements this feature might need as open-ended as possible
-
 ## Communication Protocols
 GPIO pins are used to receive incoming signals and to send signals from horn control to downstream horn output boards
 

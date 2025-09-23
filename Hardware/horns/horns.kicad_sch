@@ -2245,7 +2245,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "layout:TO-252-2"
 			(at 180.34 82.55 0)
 			(effects
 				(font
@@ -2382,7 +2382,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 132.08 140.0048 0)
 			(effects
 				(font
@@ -2450,7 +2450,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical"
+		(property "Footprint" "layout:Molex_KK-254_1x03_P2.54mm_Horizontal"
 			(at 113.03 97.79 0)
 			(effects
 				(font
@@ -2523,7 +2523,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "layout:Molex_KK-254_1x02_P2.54mm_Horizontal"
 			(at 129.54 71.12 0)
 			(effects
 				(font
@@ -2590,7 +2590,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 132.08 129.8448 0)
 			(effects
 				(font
@@ -2657,7 +2657,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "layout:CP_Oval_L16.0mm_W8.0mm_P11.5mm"
 			(at 132.08 145.0848 0)
 			(effects
 				(font
@@ -2724,7 +2724,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 142.24 86.36 0)
 			(effects
 				(font
@@ -2733,7 +2733,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds14002.pdf"
 			(at 142.24 86.36 0)
 			(effects
 				(font
@@ -2875,7 +2875,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "layout:Fuse_Littelfuse_1206"
 			(at 160.02 80.518 90)
 			(effects
 				(font
@@ -3009,7 +3009,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "layout:Molex_KK-254_1x02_P2.54mm_Horizontal"
 			(at 153.67 110.49 0)
 			(effects
 				(font
@@ -3076,7 +3076,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 132.08 134.9248 0)
 			(effects
 				(font
@@ -3146,7 +3146,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "layout:Molex_KK-254_1x02_P2.54mm_Horizontal"
 			(at 149.86 71.12 0)
 			(effects
 				(font
@@ -3213,7 +3213,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 132.08 119.6848 0)
 			(effects
 				(font
@@ -3283,7 +3283,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 162.2552 128.27 0)
 			(effects
 				(font
@@ -3350,7 +3350,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 132.08 114.6048 0)
 			(effects
 				(font
@@ -3553,7 +3553,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 132.08 109.5248 0)
 			(effects
 				(font
@@ -3620,7 +3620,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 132.08 124.7648 0)
 			(effects
 				(font
