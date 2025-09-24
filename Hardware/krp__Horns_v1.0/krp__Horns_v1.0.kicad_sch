@@ -1537,12 +1537,6 @@
 		(uuid "285ed7e9-2c30-41d1-950d-2f5da7553fd4")
 	)
 	(junction
-		(at 87.63 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "34de2ad3-a3ec-4d57-b408-e7e8ffb5d71d")
-	)
-	(junction
 		(at 87.63 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1555,6 +1549,12 @@
 		(uuid "5904be8a-66e0-4013-946b-bb84cdacc55d")
 	)
 	(junction
+		(at 71.12 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ca9d51b-ff24-44a7-bf28-d7a17a9c8e50")
+	)
+	(junction
 		(at 71.12 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1565,24 +1565,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "600c5082-d182-4311-b1f9-f26ef68cbfde")
-	)
-	(junction
-		(at 60.96 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "66f29137-c630-4377-b8b7-b2178e522d8a")
-	)
-	(junction
-		(at 71.12 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "791bcb8e-9170-457d-9576-5827bee2b327")
-	)
-	(junction
-		(at 87.63 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8541c19c-29cf-42d7-9aa8-2bd632a8de32")
 	)
 	(junction
 		(at 71.12 110.49)
@@ -1621,12 +1603,6 @@
 		(uuid "d743f216-8e59-4adb-9d1d-c76518aa10be")
 	)
 	(junction
-		(at 66.04 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dce08959-095d-4ac9-baa3-1b4b5c02c80c")
-	)
-	(junction
 		(at 60.96 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1653,16 +1629,6 @@
 			(type default)
 		)
 		(uuid "0167ac3b-7614-400a-ad79-dcb6d65ddbe3")
-	)
-	(wire
-		(pts
-			(xy 60.96 71.12) (xy 71.12 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d63d99c-11f8-49ef-879f-b5ad1efcab77")
 	)
 	(wire
 		(pts
@@ -1693,16 +1659,6 @@
 			(type default)
 		)
 		(uuid "175cd63d-26ee-436c-a47d-72b713d889a9")
-	)
-	(wire
-		(pts
-			(xy 66.04 142.24) (xy 71.12 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19f20ab4-a18d-4ef4-bc58-5ac90bad8678")
 	)
 	(wire
 		(pts
@@ -1763,6 +1719,16 @@
 			(type default)
 		)
 		(uuid "3862c3ca-6404-4f2b-a3ff-0ad986a845fd")
+	)
+	(wire
+		(pts
+			(xy 71.12 68.58) (xy 87.63 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c50f5a8-4061-4cdf-b245-94a3dee969d9")
 	)
 	(wire
 		(pts
@@ -1846,6 +1812,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 85.09) (xy 85.09 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5082d9f2-721c-4485-b8b2-03bf41271ddf")
+	)
+	(wire
+		(pts
 			(xy 69.85 110.49) (xy 71.12 110.49)
 		)
 		(stroke
@@ -1853,6 +1829,16 @@
 			(type default)
 		)
 		(uuid "571e8495-c262-402f-8c3d-307c688dec2d")
+	)
+	(wire
+		(pts
+			(xy 85.09 86.36) (xy 87.63 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5767e8fd-536e-40b4-9905-f4bb7a5ebf73")
 	)
 	(wire
 		(pts
@@ -1906,7 +1892,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 71.12) (xy 71.12 80.01)
+			(xy 71.12 68.58) (xy 71.12 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1936,16 +1922,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 134.62) (xy 71.12 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e3df7a3-6cd9-41eb-aa8f-02e9672c8c82")
-	)
-	(wire
-		(pts
 			(xy 69.85 90.17) (xy 71.12 90.17)
 		)
 		(stroke
@@ -1963,16 +1939,6 @@
 			(type default)
 		)
 		(uuid "80c14c7a-8644-493a-89df-06b5f6df98de")
-	)
-	(wire
-		(pts
-			(xy 85.09 85.09) (xy 87.63 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83095cd4-050c-45c5-8c85-062ab672522d")
 	)
 	(wire
 		(pts
@@ -2046,6 +2012,26 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 86.36) (xy 87.63 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb61fe40-085b-41ab-b5ee-91fa420f71b7")
+	)
+	(wire
+		(pts
+			(xy 87.63 82.55) (xy 90.17 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c27984c4-e484-4ee1-8837-944262525564")
+	)
+	(wire
+		(pts
 			(xy 87.63 68.58) (xy 87.63 71.12)
 		)
 		(stroke
@@ -2086,17 +2072,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 85.09) (xy 87.63 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce8ada37-8778-40b9-83ce-50d63dcb1ddb")
-	)
-	(wire
-		(pts
-			(xy 58.42 68.58) (xy 87.63 68.58)
+			(xy 58.42 68.58) (xy 71.12 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2136,16 +2112,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 82.55) (xy 90.17 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de439c5c-0b34-4b0c-82d7-6db33e25be0a")
-	)
-	(wire
-		(pts
 			(xy 87.63 110.49) (xy 87.63 111.76)
 		)
 		(stroke
@@ -2163,16 +2129,6 @@
 			(type default)
 		)
 		(uuid "e98d71a3-a4e1-4915-81f7-2f74411dd776")
-	)
-	(wire
-		(pts
-			(xy 87.63 85.09) (xy 90.17 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eab89086-3de9-4ce0-8346-d25436f129f5")
 	)
 	(wire
 		(pts
@@ -2206,13 +2162,13 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 82.55) (xy 87.63 82.55)
+			(xy 85.09 85.09) (xy 85.09 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ef301877-8724-44a7-afc2-16e83702c257")
+		(uuid "f2cad3f6-a128-47a8-bce8-4e7c5d01ba3c")
 	)
 	(wire
 		(pts
@@ -2371,7 +2327,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
 			(at 95.25 82.55 0)
 			(effects
 				(font
@@ -2505,7 +2461,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 69.85 122.2248 0)
 			(effects
 				(font
@@ -2573,7 +2529,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "layout:TO-252-2"
 			(at 90.17 102.87 0)
 			(effects
 				(font
@@ -2643,7 +2599,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 69.85 109.5248 0)
 			(effects
 				(font
@@ -2779,7 +2735,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
 			(at 87.63 74.93 0)
 			(effects
 				(font
@@ -2867,7 +2823,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 88.646 115.824 90)
 			(effects
 				(font
@@ -2937,7 +2893,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuse_0402_1005Metric"
 			(at 85.852 92.71 90)
 			(effects
 				(font
@@ -3007,7 +2963,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_KK-396_5273-03A_1x03_P3.96mm_Vertical"
 			(at 53.34 68.58 0)
 			(effects
 				(font
@@ -3080,7 +3036,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 88.5952 129.54 0)
 			(effects
 				(font
@@ -3147,7 +3103,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 69.85 89.2048 0)
 			(effects
 				(font
@@ -3281,7 +3237,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 69.85 133.6548 0)
 			(effects
 				(font
@@ -3325,7 +3281,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 80.01 85.09 180)
+		(at 80.01 86.36 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3333,7 +3289,7 @@
 		(dnp no)
 		(uuid "a5aa211f-636a-4d68-9053-1ba315d16463")
 		(property "Reference" "J1"
-			(at 79.756 79.756 0)
+			(at 79.756 81.026 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3341,15 +3297,15 @@
 			)
 		)
 		(property "Value" "Conn_01x02 (Horn Out)"
-			(at 75.692 84.836 90)
+			(at 75.692 86.106 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 80.01 85.09 0)
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+			(at 80.01 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3358,7 +3314,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 80.01 85.09 0)
+			(at 80.01 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3367,7 +3323,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 80.01 85.09 0)
+			(at 80.01 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3418,7 +3374,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
 			(at 100.33 140.97 0)
 			(effects
 				(font
@@ -3551,7 +3507,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 69.85 79.0448 0)
 			(effects
 				(font
@@ -3618,7 +3574,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 62.23 101.2952 0)
 			(effects
 				(font
