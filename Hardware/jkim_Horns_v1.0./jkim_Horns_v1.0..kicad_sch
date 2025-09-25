@@ -2535,7 +2535,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 64.77 81.28 180)
+		(at 64.77 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2544,25 +2544,25 @@
 		(fields_autoplaced yes)
 		(uuid "3b938610-ab49-4d20-a5ac-931e2e2d60f0")
 		(property "Reference" "C2"
-			(at 68.58 80.8989 0)
+			(at 68.58 79.1209 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "100 µF"
-			(at 68.58 83.4389 0)
+			(at 68.58 81.6609 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 63.8048 77.47 0)
+			(at 65.7352 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2631,7 +2631,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 123.19 116.84 0)
 			(effects
 				(font
@@ -3429,7 +3429,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 146.05 106.68 270)
+		(at 146.05 106.68 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3438,19 +3438,21 @@
 		(fields_autoplaced yes)
 		(uuid "c49020a1-6566-4fd4-93d8-b088eb1a80a9")
 		(property "Reference" "D1"
-			(at 152.4 106.68 0)
+			(at 148.59 105.4099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "D"
-			(at 149.86 106.68 0)
+			(at 148.59 107.9499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
@@ -3608,7 +3610,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
 			(at 135.89 112.522 90)
 			(effects
 				(font
