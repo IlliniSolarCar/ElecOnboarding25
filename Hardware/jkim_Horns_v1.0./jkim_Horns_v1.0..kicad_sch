@@ -2535,7 +2535,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 64.77 81.28 0)
+		(at 64.77 81.28 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2544,25 +2544,25 @@
 		(fields_autoplaced yes)
 		(uuid "3b938610-ab49-4d20-a5ac-931e2e2d60f0")
 		(property "Reference" "C2"
-			(at 68.58 79.1209 0)
+			(at 68.58 80.8989 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "100 µF"
-			(at 68.58 81.6609 0)
+			(at 68.58 83.4389 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 65.7352 85.09 0)
+			(at 63.8048 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2640,7 +2640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/91420/sihfr010.pdf"
 			(at 120.65 111.76 0)
 			(effects
 				(font
@@ -3429,7 +3429,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 146.05 106.68 90)
+		(at 146.05 106.68 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3443,7 +3443,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "D"
@@ -3452,7 +3452,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
@@ -3464,7 +3464,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds14002.pdf"
 			(at 146.05 106.68 0)
 			(effects
 				(font
