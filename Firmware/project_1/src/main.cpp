@@ -1,4 +1,4 @@
-/*
+	/*
  * This is where your main program code lives. On reset, after some basic
  * initialization code is run, main() is called.
  */
@@ -95,8 +95,14 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	if(led.read() == 0){
+        		led = 1;
+        	}
+        	else{
+        		led = 0;
+        	}
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
