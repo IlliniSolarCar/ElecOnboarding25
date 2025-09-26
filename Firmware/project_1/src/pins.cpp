@@ -13,6 +13,7 @@
  */
 
 // PROJECT 2 - You can instantiate your AnalogIn object here
+AnalogIn onboardingPotentiometer(P_ONBOARDING_POTENTIOMETER);
 
 /*
  * COMMON PIN OBJECT INSTANTIATIONS

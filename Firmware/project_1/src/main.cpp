@@ -10,6 +10,8 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
+#include <pins.h>
+#include <peripherals.h>
 
 
 /*
@@ -113,6 +115,12 @@ int main() {
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
+				int pot_value = onboardingPotentiometer.read_u16();
+				if (timing.tickThreshold(last_task_1_time, TASK_1_RATE_US/pot_value)) {
+					blinkOnboardingLED();
+				}
+
+
 
 
 	}

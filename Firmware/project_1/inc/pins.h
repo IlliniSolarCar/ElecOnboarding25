@@ -27,6 +27,9 @@
 #define P_LED4 P0_7
 // PROJECT 1 - You can define a pin macro here
 #define P_ONBOARDING_LED P0_4
+
+// PROJECT 2 - I'm defining another pin macro here... I think?
+#define P_ONBOARDING_POTENTIOMETER P0_26
 /*
  * COMMON PIN OBJECT DECLARATIONS
  */
@@ -43,6 +46,7 @@ extern DigitalOut onboardingLED;
 
 // PROJECT 2 - You can declare a AnalogIn object here
 
+extern AnalogIn onboardingPotentiometer;
 
 /*
  * BOARD SPECIFIC PIN OBJECT DECLARATIONS
