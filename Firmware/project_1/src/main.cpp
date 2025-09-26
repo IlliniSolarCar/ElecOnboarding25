@@ -106,6 +106,18 @@ int main() {
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
+        // scale rate of last_task_1_time using potentiometer (analogin)
+        float voltage_percent = potentiometer.read();
+        last_task_1_time *= voltage_percent;
+
+        if (timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)) {
+        	if (led5.read() == 1) {
+        		led5.write(0);
+        	} else {
+        		led5.write(1);
+        	}
+        }
+
 
 
 	}
