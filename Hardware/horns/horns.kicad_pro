@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 1.19,
+          "height": 2.19,
+          "width": 1.74
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -601,7 +601,7 @@
       "meta": {
         "version": 0
       },
-      "model_mode": 0,
+      "model_mode": 4,
       "workbook_filename": ""
     },
     "page_layout_descr_file": "Title_Block.kicad_wks",
