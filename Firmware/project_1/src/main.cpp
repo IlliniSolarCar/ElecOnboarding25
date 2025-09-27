@@ -5,6 +5,7 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -88,6 +89,10 @@ int main() {
 
         //clear CAN Buffer
         while(!common.readCANMessage(msg)) {
+			if (commons.difference(last_task_t_time, now) % 60 == 0) {
+				commons.clearTX();
+				last_task_1_time = commons.difference(last_task_t_time, now);
+			}
         	//you should do something with the relevant CAN messages here
         	//toggle the CAN receive LED for only the messages you need to
         	//receive for this board to function. This should be only a few
@@ -96,7 +101,13 @@ int main() {
         }
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+			if (P0_4.read() == 0) {
+				P0_4.write(1);
+			} else {
+				P0_4.write(0);
+			}
         	//PROJECT 1 - add code here to actually make the LED blink
+			
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
