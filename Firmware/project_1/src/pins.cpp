@@ -13,7 +13,7 @@
  */
 
 // PROJECT 2 - You can instantiate your AnalogIn object here
-
+AnalogIn led6(P_LED5);
 /*
  * COMMON PIN OBJECT INSTANTIATIONS
  */
