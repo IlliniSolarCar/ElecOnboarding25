@@ -115,10 +115,10 @@
 			(plotfptext yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
-			(subtractmaskfromsilk no)
+			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
 			(outputdirectory "")
 		)
@@ -998,7 +998,7 @@
 		(descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R1"
-			(at 1.4325 -1 360)
+			(at 1.4325 -1 0)
 			(layer "F.SilkS")
 			(uuid "02a3753d-d0d9-450a-9903-c7323733df0e")
 			(effects
@@ -1009,7 +1009,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 0 1.05 360)
+			(at 0 1.05 0)
 			(layer "F.Fab")
 			(uuid "887fe764-f890-49df-b3f5-1de246fd7048")
 			(effects
@@ -1144,7 +1144,7 @@
 			(uuid "8e9872ac-7de6-4b5c-9f4e-ba441474376f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.68 360)
+			(at 0 -0.68 0)
 			(layer "F.Fab")
 			(uuid "5a6a67b1-ff00-433d-9ea0-991fc7b5f08a")
 			(effects
@@ -4539,7 +4539,7 @@
 		(descr "Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "diode handsolder")
 		(property "Reference" "D1"
-			(at 0 1.25 360)
+			(at 0 1.25 0)
 			(layer "F.SilkS")
 			(uuid "19c026dd-0b0c-4eaa-821c-bd213ecf91d6")
 			(effects
@@ -4550,7 +4550,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 0 1.05 360)
+			(at 0 1.05 0)
 			(layer "F.Fab")
 			(uuid "78d33200-3994-438a-823d-16f39a28977b")
 			(effects
@@ -4742,7 +4742,7 @@
 			(uuid "7ad89c83-c443-4fa5-815d-21656d768f99")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.68 360)
+			(at 0 -0.68 0)
 			(layer "F.Fab")
 			(uuid "ae9efe6f-4655-4c0c-820a-a2230cc74af0")
 			(effects
