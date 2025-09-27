@@ -20,6 +20,9 @@
 // PROJECT 1 - You can change the macro name to something more descriptive if you'd like
 #define TASK_1_RATE_US 1000000
 
-
+//PROJECT 2
+// Blink period range for potentiometer control
+#define BLINK_MIN_US  200000    // 0.2 s
+#define BLINK_MAX_US 2000000    // 2.0 s
 
 #endif /* SETUP_H_ */

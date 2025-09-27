@@ -77,7 +77,7 @@ int main() {
 	// Configure all of our peripherals and globals
 	setup();
 	uint32_t last_task_1_time = timing.onTick(NULL);
-
+	static uint32_t blink_rate_us = TASK_1_RATE_US;   // start at 1s
 	CANMessage msg;
 	bool shutdown = false;
 	// Main functionality
@@ -96,13 +96,23 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, blink_rate_us)){
         	//PROJECT 1 - add code here to actually make the LED blink
         	LED = !LED;// toggle heart beat LED every interval
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
+           float pot_raw = POT.read();
+           static float pot_f = 0.0f;    // filtered value
+           pot_f = 0.9f * pot_f + 0.1f * pot_raw;  // smoothing
 
+           uint32_t mapped = (uint32_t)(
+               BLINK_MIN_US + (BLINK_MAX_US - BLINK_MIN_US) * (1.0f - pot_f)
+           );
+
+           if (mapped < BLINK_MIN_US) mapped = BLINK_MIN_US;
+           if (mapped > BLINK_MAX_US) mapped = BLINK_MAX_US;
+           blink_rate_us = mapped;
 
 	}
 
