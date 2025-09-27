@@ -2996,7 +2996,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "~https://www.vishay.com/docs/91420/sihfr010.pdf"
 			(at 124.46 95.25 0)
 			(effects
 				(font
@@ -3014,7 +3014,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "IRFR010PBF-BE3"
 			(at 124.46 95.25 0)
 			(effects
 				(font
@@ -3547,7 +3547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "~https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/641/6410/022272021_sd.pdf?inline"
 			(at 147.32 100.33 0)
 			(effects
 				(font
@@ -3565,7 +3565,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "022272021"
 			(at 147.32 100.33 0)
 			(effects
 				(font
@@ -3721,7 +3721,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "~https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/641/6410/022272021_sd.pdf?inline"
 			(at 93.98 93.98 0)
 			(effects
 				(font
@@ -3739,7 +3739,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "022272021"
 			(at 93.98 93.98 0)
 			(effects
 				(font
@@ -4007,7 +4007,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "~https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/641/6410/022272021_sd.pdf?inline"
 			(at 147.32 109.22 0)
 			(effects
 				(font
@@ -4025,7 +4025,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "022272021"
 			(at 147.32 109.22 0)
 			(effects
 				(font
@@ -4340,7 +4340,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "~https://www.diodes.com/assets/Datasheets/ds14002.pdf"
 			(at 146.05 92.71 90)
 			(effects
 				(font
@@ -4358,7 +4358,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ES2DA-13-F"
 			(at 146.05 92.71 0)
 			(effects
 				(font
