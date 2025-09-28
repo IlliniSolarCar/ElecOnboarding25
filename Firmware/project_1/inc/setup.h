@@ -21,6 +21,10 @@
 // PROJECT 1 - You can change the macro name to something more descriptive if you'd like
 #define LED_BLINK_RATE_US 1000000
 
+//Project 2 macros
+#define LED_BLINK_RATE_MIN_US 100000 //10hz
+#define LED_BLINK_RATE_MAX_US 1000000 //1hz
+
 
 
 #endif /* SETUP_H_ */

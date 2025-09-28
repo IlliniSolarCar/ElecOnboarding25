@@ -13,6 +13,7 @@
  */
 
 // PROJECT 2 - You can instantiate your AnalogIn object here
+AnalogIn blink_pot(P_BLINK_POT);
 
 /*
  * COMMON PIN OBJECT INSTANTIATIONS
