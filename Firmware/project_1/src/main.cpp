@@ -35,8 +35,8 @@ void checkCANController() {
  * mandatory.
  *
  * If you have global variables that need to be initialized, here would
- * be a good place to do it.
- */
+ * be a good place to do it.*/
+
 void setup() {
 
 	//set up the CAN interrupts and handling.
@@ -92,6 +92,11 @@ int main() {
 			if (commons.difference(last_task_t_time, now) % 60 == 0) {
 				commons.clearTX();
 				last_task_1_time = commons.difference(last_task_t_time, now);
+				if (P0_4.read()==0) {
+					P0_4.write(1);
+				} else {
+					P0_4.write(0);
+				}
 			}
         	//you should do something with the relevant CAN messages here
         	//toggle the CAN receive LED for only the messages you need to
