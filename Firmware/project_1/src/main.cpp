@@ -1,7 +1,6 @@
 /*
  * This is where your main program code lives. On reset, after some basic
- * initialization code is run, main() is called.
- */
+ * initialization code is run, main() is called. */
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
