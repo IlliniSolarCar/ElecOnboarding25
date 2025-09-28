@@ -9,7 +9,7 @@
 
 ## Overview and Description
 The primary function of this board is to power the electronic horn.
-- Wiki page: [add link to page]
+- Wiki page: [https://wiki.illinisolarcar.com/w/index.php/Public:Electrical_Onboarding_Fall_2025]
 
 ## High-Level Requirements
 - A Horn On/Off which will be a digital signal for whether or not it should be on
@@ -31,7 +31,7 @@ There are 4 connectors on this board.
 There are no ICs for this board
 
 ## Buttons/Switches
-A button can be added to debug the board
+A button can be added to debug the board, but this board does not have one.
 
 ## Power System
 - 24V from the LV bus
@@ -40,4 +40,4 @@ A button can be added to debug the board
 - Which signals should have test points?
 
 ## LED Indicators
-- List any functions that should have an LED to indicate they are doing something. Include the 4 default debug LEDs for ISC boards
+General LEDs can be used for debug and status to show that firmare, CAN, power, etc. is working. 
