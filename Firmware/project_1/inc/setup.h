@@ -16,9 +16,10 @@
 //be warned this oscialltor is only accurate +/- 40% so make this time bigger than you think you need
 #define WDT_TIMEOUT_US 10000000
 
-//task 1 rate
+//task 1 rate in microseconds
+//controls the rate at which the LED blinks, currently set to 1,000,000us or 1s
 // PROJECT 1 - You can change the macro name to something more descriptive if you'd like
-#define TASK_1_RATE_US 1000000
+#define LED_BLINK_RATE_US 1000000
 
 
 

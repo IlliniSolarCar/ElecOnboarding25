@@ -10,6 +10,7 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
+#include "pins.h"
 
 
 /*
@@ -49,6 +50,9 @@ void setup() {
 	timing.addCallback(BRIZO_CAN::DEMO_HEART.RATE / 2, heartbeat);
 	timing.addCallback(CHECK_CAN_RATE_US, checkCANController);
 
+	//Here's how I assume we can blink the LED by scheduling it through the timer:
+	//timing.addCallback(LED_BLINK_RATE_US, blinkLed)
+
 	bool wdt_reset;
 	//start the timing and check for wdt caused reset
 	common.startTimingCommon(&timing, &wdt_reset);
@@ -70,6 +74,10 @@ void shutdown_method() {
 	while(1) {
 		wdt.feed();
 	}
+}
+
+void toggleLed() {
+	blink_led.write(~blink_led.read());
 }
 
 int main() {
@@ -95,8 +103,15 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        //I read into the timing.tickThreshold function and verified that it took
+        //last_task_1_time as a reference. Smart way to do ticking
+        if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+
+        	//Encapsulate behavior into function for easier readability
+        	//Other benefit is being able to take this function and add
+        	//it as a callback to the timer in the setup function.
+        	toggleLed();
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
