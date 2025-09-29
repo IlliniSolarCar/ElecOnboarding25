@@ -13,7 +13,7 @@
  */
 
 // PROJECT 2 - You can instantiate your AnalogIn object here
-
+AnalogIn pm1(P_PM);
 /*
  * COMMON PIN OBJECT INSTANTIATIONS
  */
@@ -24,3 +24,4 @@ DigitalOut led3(P_LED3);
 DigitalOut led4(P_LED4);
 // PROJECT 1 - You can instantiate your DigitalOut object here
 DigitalOut led(P_LED_FOO);
+

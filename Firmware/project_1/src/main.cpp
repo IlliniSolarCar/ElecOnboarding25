@@ -5,7 +5,9 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+//I need to use the pins and macro
 #include "setup.h"
+#include "pins.h"
 
 #include "peripherals.h"
 #include "can_struct.h"
@@ -96,14 +98,13 @@ int main() {
         	//total messages. Do nothing for irrelevant messages
         	common.toggleReceiveCANLED();
         }
-
-        if(timing.tickThreshold(last_task_1_time, freq)){
+        //PROJECT 2 - use the potentiometer to change the blink rate
+        float f = pm1.read();
+        uint32_t freq_pm = f * freq;
+        if(timing.tickThreshold(last_task_1_time, freq_pm)){
         	led = !led;
         	//PROJECT 1 - add code here to actually make the LED blink
-
         }
-
-        //PROJECT 2 - use the potentiometer to change the blink rate
 
 
 	}
