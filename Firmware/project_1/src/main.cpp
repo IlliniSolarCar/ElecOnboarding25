@@ -103,7 +103,10 @@ int main() {
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
+			float pot_input = pot.read();
+			const float scaling = 900000.0f;
+			const float min = 100000.0f;
+			int TASK1_RATE_US = min + pot_input * scaling;
 
 	}
 
