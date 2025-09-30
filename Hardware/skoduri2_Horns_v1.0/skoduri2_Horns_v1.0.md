@@ -8,59 +8,38 @@
 
 
 ## Overview and Description
-- What is the primary function of this board?
-- What does this board replace?
-- One or two more bullets (if necessary) talking about other things this board does
-- Other board integration (List other boards and communication protocols)
-	- Board 1 (CAN)
-	- Board 2 (USB)
-- Wiki page: [add link to page]
+- This board functions to sound the horn of the car
+- Wiki page: [\[add link to page\]](https://wiki.illinisolarcar.com/w/index.php/Public:Electrical_Onboarding_Fall_2025#Project_1:_LED_Circuit)
 
 ## High-Level Requirements
-- Microcontroller (list microcontroller if the board has one)
-	- Hyperlinked microcontroller name
-		- MCU must be either LPC154X (USB-enabled) or LPC151X (no USB) unless there is a necessary reason to use something else
-	- List any specific configuration requirements 
-	- How will this board be programmed?
-	- List any buttons or switches that control signals to or from the microcontroller
-- List any features this board must have
-	- Describe each feature in a general way
-		- (Optional) Describe any requirements this feature might need as open-ended as possible
+- Board should take in a digital signal for whether the horn is on or off
+- Horn outputs 24V at 150 mA
+- Microcontroller: LPC154X
+- Horn will be programmed through a gate connection in the microprocessor connected to a switch
+- Button controlling horn sound
 
 ## Communication Protocols
-- List each communication protocol used to send data to/from other systems or boards
-	- Does this board need external components to process data using this protocol?
-	- List any requirements needed to properly implement this protocol on the board
-- Do not list communication protocols that will be used to connect different components within this PCB unless there is a reason to restrict the board design to a specific protocol
+- Utilizes a digital signal through the microprocessor gate (a basic high-low signal)
 
 ## Connectors
- - List any general requirements for connectors here (e.g. no through-hole, low-profile, minimum 1A current capacity, etc.)
- - Then list each connector, specific type/requirements, and pinout such as:
- - Power In (KK 2.54)
-	- GND
-	- +12V
-	- GND
+ - Power In: 1x3 pin connector, GND +24 GND, nominal 150mA
+ - Control: Signal and GND
+ - Outputs: 2x 1x2 pin connectors, one horn (power/gnd) for each ofthe connectors, nominally 150mA
+ - Outputs: 2x 1x2 pin connectors, one horn (power/gnd) for each ofthe connectors, nominally 150mA, direction doesnt matter
+ - this design uses molex connectors kk-254 connectors but they can be substituted for whatever connector is actually needed, holes for connectors
+ - are 0.1 inch spaced
 
 ## ICs
-- Only list specific ICs if the board require this specific component to work
-- If you do list an IC here, use the following format:
-- Component part number
-	- Datasheet (must be direct hyperlink to datasheet)
-	- One-line description of part
-	- Communication protocols used (if any)
+-  n/a
 
 ## Buttons/Switches
-- If the board needs buttons, describe what they do and how they will connect to the board
+- One button controlling the sound of the horn. This is connected to the microcontroller, as if the button is pushed down, it should turn off the microcontroller, which in turn supplies the gate with 3.3V, making the horn sound turn on
 
 ## Power System
-- List each source that the board will need to function within the scope of this document
-	- Where does this voltage originate?
-	- List what protection this power supply needs
-	- List any other requirements for this rail
-- List specific details in the wiki documentation
+- Voltage supplied from a 24 LV bus, a 2A fuse, and a flyback diode
 
 ## Test Points
-- Which signals should have test points?
+- We will have a test point for the signal and the voltage going through
 
 ## LED Indicators
-- List any functions that should have an LED to indicate they are doing something. Include the 4 default debug LEDs for ISC boards
+- Red led indicates 24V is plugged in, green led indicates microcontroller signal is going through
