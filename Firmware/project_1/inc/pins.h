@@ -42,7 +42,7 @@ extern DigitalOut ledtest;
  */
 
 // PROJECT 2 - You can declare a AnalogIn object here
-
+extern AnalogIn pot_value;
 
 /*
  * BOARD SPECIFIC PIN OBJECT DECLARATIONS
