@@ -610,6 +610,151 @@
 				)
 			)
 		)
+		(symbol "Diode:1N4002"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4002"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100V 1A General Purpose Rectifier Diode, DO-41"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?41*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4002_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4002_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Transistor_FET:IRF6646"
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -1620,6 +1765,12 @@
 		(uuid "da5ec6eb-87e1-4cdb-8bff-ff0bcf6a1057")
 	)
 	(junction
+		(at 66.04 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eed8b3df-70b6-4d82-868a-578a7d9a9148")
+	)
+	(junction
 		(at 167.64 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1636,6 +1787,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fa060897-e4e9-4e82-b5aa-4dc3029a4794")
+	)
+	(junction
+		(at 66.04 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb9d1e2c-aacc-4eba-81be-948ecece5872")
 	)
 	(junction
 		(at 137.16 33.02)
@@ -1791,6 +1948,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 104.14) (xy 66.04 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35cba30b-119d-46d9-874b-4eb930c60aec")
+	)
+	(wire
+		(pts
 			(xy 41.91 30.48) (xy 48.26 30.48)
 		)
 		(stroke
@@ -1901,7 +2068,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 90.17) (xy 66.04 91.44)
+			(xy 66.04 88.9) (xy 66.04 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1918,6 +2085,16 @@
 			(type default)
 		)
 		(uuid "75540a9f-bdaf-4bd5-a1dd-97deedf09a63")
+	)
+	(wire
+		(pts
+			(xy 80.01 100.33) (xy 80.01 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76b3c4cb-63d9-4371-a70c-a5ef207144ff")
 	)
 	(wire
 		(pts
@@ -1951,7 +2128,27 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 81.28) (xy 66.04 82.55)
+			(xy 80.01 104.14) (xy 66.04 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "878239c1-099a-4342-8b4f-a25bfe21db89")
+	)
+	(wire
+		(pts
+			(xy 80.01 92.71) (xy 80.01 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "895bf677-c41a-46f3-91fd-63a39eca5e27")
+	)
+	(wire
+		(pts
+			(xy 66.04 78.74) (xy 66.04 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2001,6 +2198,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 90.17) (xy 66.04 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3397e91-e7ac-477a-9a1c-4329452ef8b4")
+	)
+	(wire
+		(pts
 			(xy 48.26 111.76) (xy 48.26 107.95)
 		)
 		(stroke
@@ -2021,7 +2228,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 101.6) (xy 66.04 111.76)
+			(xy 66.04 101.6) (xy 66.04 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2138,6 +2345,16 @@
 			(type default)
 		)
 		(uuid "c6307e88-d6a5-4c47-afcc-8540b6b231db")
+	)
+	(wire
+		(pts
+			(xy 66.04 90.17) (xy 66.04 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8b0bb44-b4e0-49f7-aaf3-a562e6591603")
 	)
 	(wire
 		(pts
@@ -2340,7 +2557,7 @@
 	(text_box "Switch"
 		(exclude_from_sim no)
 		(at 27.94 68.58 0)
-		(size 55.88 53.34)
+		(size 60.96 53.34)
 		(stroke
 			(width 0)
 			(type default)
@@ -2435,7 +2652,7 @@
 	)
 	(global_label "HRN_IN"
 		(shape input)
-		(at 66.04 81.28 90)
+		(at 66.04 78.74 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2445,7 +2662,7 @@
 		)
 		(uuid "cca0cd45-1ffc-45f3-af00-9a4d8bf48937")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.04 71.4609 90)
+			(at 66.04 68.9209 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2822,7 +3039,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal"
 			(at 36.83 33.02 0)
 			(effects
 				(font
@@ -3165,7 +3382,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 63.5 38.1 0)
 			(effects
 				(font
@@ -3272,6 +3489,75 @@
 			(project "eddie_horn_v1.0"
 				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4002")
+		(at 80.01 96.52 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6bef291b-1c07-4535-9e89-f563a9f203f7")
+		(property "Reference" "D1"
+			(at 80.01 91.694 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4002"
+			(at 80.01 93.726 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 75.565 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+			(at 80.01 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 1A General Purpose Rectifier Diode, DO-41"
+			(at 80.01 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba497ff6-f4ad-4fad-9123-02c26251b27e")
+		)
+		(pin "2"
+			(uuid "b10b2c88-64a1-46dd-ac4d-2c4bc3cd8876")
+		)
+		(instances
+			(project ""
+				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -3620,7 +3906,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 66.04 86.36 0)
+		(at 66.04 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3629,7 +3915,7 @@
 		(fields_autoplaced yes)
 		(uuid "c2fa7c91-3b30-4944-a017-5897b45466cb")
 		(property "Reference" "F1"
-			(at 68.58 85.0899 0)
+			(at 68.58 83.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3638,7 +3924,7 @@
 			)
 		)
 		(property "Value" "2A"
-			(at 68.58 87.6299 0)
+			(at 68.58 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3647,7 +3933,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 64.262 86.36 90)
+			(at 64.262 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3656,7 +3942,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 66.04 86.36 0)
+			(at 66.04 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3665,7 +3951,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 66.04 86.36 0)
+			(at 66.04 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3917,7 +4203,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 63.5 49.53 0)
 			(effects
 				(font
@@ -4121,7 +4407,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 36.83 55.88 0)
 			(effects
 				(font

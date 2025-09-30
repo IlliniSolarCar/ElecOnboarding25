@@ -56,7 +56,7 @@ void setup() {
 	timing.addCallback(BRIZO_CAN::DEMO_HEART.RATE / 2, heartbeat);
 	timing.addCallback(CHECK_CAN_RATE_US, checkCANController);
 
-	//alternate method :p
+	//alternate method
 	//timing.addCallback(BLINK_RATE, blink);
 
 	bool wdt_reset;
@@ -105,7 +105,7 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, BLINK_RATE)){
         	//PROJECT 1 - add code here to actually make the LED blink
         	blink();
         }
