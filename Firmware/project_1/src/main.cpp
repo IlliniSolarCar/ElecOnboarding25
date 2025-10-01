@@ -5,6 +5,7 @@
 
 #include <mbed.h>
 #include <setup.h>
+#include <pins.h>
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
