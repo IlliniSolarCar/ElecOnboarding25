@@ -3090,7 +3090,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal"
 			(at 62.23 82.55 0)
 			(effects
 				(font
@@ -3245,7 +3245,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 59.69 44.45 0)
 			(effects
 				(font
@@ -3791,7 +3791,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 71.12 125.73 0)
 			(effects
 				(font
@@ -3878,7 +3878,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 71.12 118.11 0)
 			(effects
 				(font
