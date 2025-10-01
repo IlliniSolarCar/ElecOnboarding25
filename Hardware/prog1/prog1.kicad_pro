@@ -2,11 +2,14 @@
   "board": {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.09999999999999999,
         "copper_line_width": 0.19999999999999998,
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     "3dviewports": [],
@@ -18,6 +21,9 @@
         "board_outline_line_width": 0.1,
         "copper_line_width": 0.2,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -28,7 +34,11 @@
         "copper_text_upright": false,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "courtyard_line_width": 0.049999999999999996,
+=======
+        "courtyard_line_width": 0.05,
+>>>>>>> Stashed changes
 =======
         "courtyard_line_width": 0.05,
 >>>>>>> Stashed changes
@@ -47,7 +57,11 @@
         },
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "fab_line_width": 0.09999999999999999,
+=======
+        "fab_line_width": 0.1,
+>>>>>>> Stashed changes
 =======
         "fab_line_width": 0.1,
 >>>>>>> Stashed changes
@@ -68,9 +82,15 @@
         "pads": {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "drill": 0.762,
           "height": 1.524,
           "width": 1.524
+=======
+          "drill": 0.0,
+          "height": 0.4,
+          "width": 0.635
+>>>>>>> Stashed changes
 =======
           "drill": 0.0,
           "height": 0.4,
@@ -103,7 +123,13 @@
         "clearance": "error",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "copper_edge_clearance": "error",
+=======
+        "connection_width": "warning",
+        "copper_edge_clearance": "error",
+        "copper_sliver": "warning",
+>>>>>>> Stashed changes
 =======
         "connection_width": "warning",
         "copper_edge_clearance": "error",
@@ -122,6 +148,7 @@
         "extra_footprint": "warning",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
@@ -130,6 +157,8 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         "footprint": "error",
@@ -146,6 +175,9 @@
         "lib_footprint_issues": "warning",
         "lib_footprint_mismatch": "warning",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -160,10 +192,13 @@
         "shorting_items": "error",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         "silk_edge_clearance": "warning",
@@ -175,6 +210,9 @@
         "text_height": "warning",
         "text_thickness": "warning",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -196,6 +234,7 @@
         "min_clearance": 0.0,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "min_copper_edge_clearance": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -212,6 +251,8 @@
       },
       "track_widths": [],
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         "min_connection": 0.0,
@@ -304,6 +345,9 @@
         }
       },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -313,8 +357,11 @@
     },
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "layer_presets": []
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     "ipc2581": {
@@ -327,6 +374,9 @@
     "layer_presets": [],
     "viewports": []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -518,6 +568,10 @@
       "bus_to_net_conflict": "error",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+      "conflicting_netclasses": "error",
+>>>>>>> Stashed changes
 =======
       "conflicting_netclasses": "error",
 >>>>>>> Stashed changes
@@ -530,6 +584,10 @@
       "duplicate_sheet_names": "error",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+      "endpoint_off_grid": "warning",
+>>>>>>> Stashed changes
 =======
       "endpoint_off_grid": "warning",
 >>>>>>> Stashed changes
@@ -543,7 +601,10 @@
       "lib_symbol_issues": "warning",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
       "missing_bidi_pin": "warning",
@@ -551,6 +612,9 @@
       "missing_power_pin": "error",
       "missing_unit": "warning",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -565,6 +629,10 @@
       "similar_labels": "warning",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+      "simulation_model_issue": "ignore",
+>>>>>>> Stashed changes
 =======
       "simulation_model_issue": "ignore",
 >>>>>>> Stashed changes
@@ -584,7 +652,11 @@
   "meta": {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "filename": "Template_v0.0_v6.kicad_pro",
+=======
+    "filename": "prog1.kicad_pro",
+>>>>>>> Stashed changes
 =======
     "filename": "prog1.kicad_pro",
 >>>>>>> Stashed changes
@@ -598,7 +670,11 @@
       {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "bus_width": 12.0,
+=======
+        "bus_width": 12,
+>>>>>>> Stashed changes
 =======
         "bus_width": 12,
 >>>>>>> Stashed changes
@@ -620,6 +696,7 @@
         "via_drill": 0.4,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "wire_width": 6.0
       }
     ],
@@ -628,6 +705,8 @@
     },
     "net_colors": null
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         "wire_width": 6
@@ -640,6 +719,9 @@
     "netclass_assignments": null,
     "netclass_patterns": []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -650,10 +732,13 @@
       "idf": "",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "netlist": "",
       "specctra_dsn": "",
       "step": "",
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
       "netlist": "prog1.net",
@@ -663,6 +748,9 @@
       "step": "",
       "svg": "",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -674,8 +762,11 @@
     "annotate_start_num": 0,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "drawing": {
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     "bom_export_filename": "",
@@ -765,6 +856,9 @@
       "dashed_lines_dash_length_ratio": 12.0,
       "dashed_lines_gap_length_ratio": 3.0,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -780,7 +874,10 @@
       "label_size_ratio": 0.375,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
       "operating_point_overlay_i_precision": 3,
@@ -789,6 +886,9 @@
       "operating_point_overlay_v_range": "~V",
       "overbar_offset_ratio": 1.23,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -802,7 +902,11 @@
     },
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "net_format_name": "",
+=======
+    "net_format_name": "OrcadPCB2",
+>>>>>>> Stashed changes
 =======
     "net_format_name": "OrcadPCB2",
 >>>>>>> Stashed changes
@@ -823,8 +927,11 @@
     "spice_adjust_passive_values": false,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "spice_external_command": "spice \"%I\"",
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     "spice_current_sheet_as_root": false,
@@ -834,6 +941,9 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -845,7 +955,11 @@
       "1e1b062d-fad0-427c-a622-c5b8a80b5268",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       ""
+=======
+      "Root"
+>>>>>>> Stashed changes
 =======
       "Root"
 >>>>>>> Stashed changes
