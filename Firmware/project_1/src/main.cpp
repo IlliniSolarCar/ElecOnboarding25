@@ -111,12 +111,12 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
-					blinkOnboardingLED();
+					// blinkOnboardingLED();
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
 				int pot_value = onboardingPotentiometer.read_u16();
-				if (timing.tickThreshold(last_task_1_time, TASK_1_RATE_US/pot_value)) {
+				if (timing.tickThreshold(last_task_1_time, TASK_1_RATE_US/(pot_value + 1))) {
 					blinkOnboardingLED();
 				}
 
