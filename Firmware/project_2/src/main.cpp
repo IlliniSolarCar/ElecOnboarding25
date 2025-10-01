@@ -101,7 +101,7 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US * intMult)){
         	//PROJECT 1 - add code here to actually make the LED blink
-        	bool ledState = (led5.read()) ? true : false;
+        	int ledState = (led5.read()) ? 1 : 0;
 			led5.write(ledState);
 			/* This works too I guess but I wanted to be special
         	if (led5.read() == 0) {
