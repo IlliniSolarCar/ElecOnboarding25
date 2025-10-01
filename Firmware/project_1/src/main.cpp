@@ -99,7 +99,17 @@ int main() {
             ledHeartbeat = !ledHeartbeat;  // Toggle LED on/off
         }
 
-        //PROJECT 2 - use the potentiometer to change the blink rate
+        // Read potentiometer value
+        float pot_value = potentiometer.read();
+
+        // Map potentiometer value to a blink rate in microseconds
+
+        uint32_t blink_rate = 100000 + (uint32_t)(pot_value * 1900000);
+
+        if (timing.tickThreshold(last_task_1_time, blink_rate)) {
+            led_heartbeat = !led_heartbeat;
+        }
+
 
 
 	}

@@ -26,3 +26,4 @@ DigitalOut led_heartbeat(P_LED_HEARTBEAT);
 
 // PROJECT 1 - You can instantiate your DigitalOut object here
 DigitalOut ledHeartbeat(P0_4);
+AnalogIn potentiometer(POT_PIN);
