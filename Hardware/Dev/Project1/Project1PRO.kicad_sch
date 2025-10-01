@@ -1136,7 +1136,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "layout:LED_0603_Symbol_on_F.SilkS"
 			(at 148.59 85.09 0)
 			(effects
 				(font
@@ -1213,7 +1213,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 145.034 77.724 90)
 			(effects
 				(font
@@ -1356,7 +1356,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
 			(at 99.06 85.09 0)
 			(effects
 				(font
@@ -1500,7 +1500,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile"
 			(at 130.81 73.66 0)
 			(effects
 				(font
