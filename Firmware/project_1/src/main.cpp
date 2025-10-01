@@ -81,6 +81,7 @@ int main() {
 	bool shutdown = false;
 	// Main functionality
 	while (!shutdown) {
+		uint32_t time = TASK_1_RATE_US;
 
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
         bool overflow;
@@ -95,12 +96,15 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, time)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	led0 != led0;
+
+
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
+        time = TASK_1_RATE_US * trol;
 
 	}
 
