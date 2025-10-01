@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 (kicad_wks (version 20210606) (generator pl_editor)
   (setup (textsize 1.5 1.5)(linewidth 0.15)(textlinewidth 0.15)
   (left_margin 10)(right_margin 10)(top_margin 10)(bottom_margin 10))
@@ -265,6 +266,8 @@
     )
   )
 =======
+=======
+>>>>>>> Stashed changes
 (kicad_wks
 	(version 20231118)
 	(generator "pl_editor")
@@ -578,5 +581,8 @@
 			"WW/+HzsfrjEiL20dAAAAAElFTkSuQmCC"
 		)
 	)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 )
