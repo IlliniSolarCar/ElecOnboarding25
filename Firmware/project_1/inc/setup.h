@@ -20,6 +20,7 @@
 // PROJECT 1 - You can change the macro name to something more descriptive if you'd like
 #define HB_RATE_US 1000000
 
-
+#define MIN_BLINK_RATE_US 100000
+#define MAX_BLINK_RATE_US 1000000
 
 #endif /* SETUP_H_ */

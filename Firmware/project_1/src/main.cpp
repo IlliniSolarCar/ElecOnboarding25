@@ -78,6 +78,8 @@ int main() {
 	setup();
 	uint32_t last_task_1_time = timing.onTick(NULL);
 
+	uint32_t curr_blink_rate_us = 500000;
+
 	CANMessage msg;
 	bool shutdown = false;
 	// Main functionality
@@ -96,13 +98,16 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, HB_RATE_US)){
+        //PROJECT 2 - use the potentiometer to change the blink rate
+        float pot = potentiometer.read();
+
+        uint32_t range = MAX_BLINK_RATE_US - MIN_BLINK_RATE_US;
+		current_blink_rate_us = MIN_BLINK_RATE_US + (pot_value * range);
+
+        if(timing.tickThreshold(last_task_1_time, curr_blink_rate_us)){
         	//PROJECT 1 - add code here to actually make the LED blink
         	ledhb = !ledhb;
         }
-
-        //PROJECT 2 - use the potentiometer to change the blink rate
-
 
 	}
 

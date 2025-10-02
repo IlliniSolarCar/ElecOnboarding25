@@ -42,16 +42,14 @@ extern DigitalOut ledhb;
 /*
  * BOARD SPECIFIC PINS
  */
+#define P_POT P0_11
 
 // PROJECT 2 - You can declare a AnalogIn object here
-
+extern AnalogIn potentiometer;
 
 /*
  * BOARD SPECIFIC PIN OBJECT DECLARATIONS
  */
-
-
-
 
 
 #endif // __MBED1549_SKELETON_PINS_H__
