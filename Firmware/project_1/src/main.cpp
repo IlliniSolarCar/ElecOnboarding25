@@ -5,6 +5,8 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
+#include "setup.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -95,12 +97,37 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
+        /* ARCHIVED PROJECT 1 CODE
+         *
+         *
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
-        }
+                	//PROJECT 1 - add code here to actually make the LED blink
+                	if(LED_circ.read()) {
+                		LED_circ.write(0);
+                	} else {
+                		LED_circ.write(1);
+                	}
+                }
+         */
 
         //PROJECT 2 - use the potentiometer to change the blink rate
 
+        // read ratepot value and store
+        float ratepot_val = ratepot.read();
+
+        // calculate new rate as the pot's percentage (0.0 to 1.0) and store as uint32_t b/c .tickThreshold requires uint32_t type
+        // new rate is a percentage of TASK_1_RATE_US, percentage given by the pot
+
+        uint32_t newrate = ratepot_val * TASK_1_RATE_US;
+
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        	//PROJECT 1 - add code here to actually make the LED blink
+        	if(LED_circ.read()) {
+        		LED_circ.write(0);
+        	} else {
+        		LED_circ.write(1);
+        	}
+        }
 
 	}
 
