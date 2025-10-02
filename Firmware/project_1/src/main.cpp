@@ -6,6 +6,7 @@
 #include <mbed.h>
 // PROJECT 1 - Include something here!
 #include "pins.h"
+#include "setup.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -99,9 +100,9 @@ int main() {
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
         	if(LED_circ.read()) {
-        		LED_circ.write(1);
-        	} else {
         		LED_circ.write(0);
+        	} else {
+        		LED_circ.write(1);
         	}
         }
 
