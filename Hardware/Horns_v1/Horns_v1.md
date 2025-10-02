@@ -3,19 +3,22 @@
 > A well-designed board specification should also contain enough information that a reasonably experienced board designer could read the project requirements and design the PCB from scratch. The implementation details should be left up to the person that will actually be designing and making the board.
 
 
-# Board Name
+# Horns Board
 **Board Requirements**
-
+Digital Signal to determine if the Horn is on or off. 
+A Horn output that will output 24V at 150mA
 
 ## Overview and Description
 - What is the primary function of this board?
+	To get a signal and activate a horn
 - What does this board replace?
+	Nothing
 - One or two more bullets (if necessary) talking about other things this board does
 - Other board integration (List other boards and communication protocols)
 	- Board 1 (CAN)
 	- Board 2 (USB)
 - Wiki page: [add link to page]
-
+https://wiki.illinisolarcar.com/w/index.php/Public:Electrical_Onboarding_Fall_2025#.28Challenge.29_Project_2:_Horns_Board
 ## High-Level Requirements
 - Microcontroller (list microcontroller if the board has one)
 	- Hyperlinked microcontroller name
@@ -29,8 +32,11 @@
 
 ## Communication Protocols
 - List each communication protocol used to send data to/from other systems or boards
+	Digital GPIO
 	- Does this board need external components to process data using this protocol?
+	I think so
 	- List any requirements needed to properly implement this protocol on the board
+
 - Do not list communication protocols that will be used to connect different components within this PCB unless there is a reason to restrict the board design to a specific protocol
 
 ## Connectors
@@ -40,6 +46,8 @@
 	- GND
 	- +12V
 	- GND
+ - Horn Control
+ - Horn Output in series 
 
 ## ICs
 - Only list specific ICs if the board require this specific component to work
@@ -54,13 +62,23 @@
 
 ## Power System
 - List each source that the board will need to function within the scope of this document
-	- Where does this voltage originate?
-	- List what protection this power supply needs
+	- Where does this voltage originate? LV bus board 
+	- List what protection this power supply needs. 2a fuse
 	- List any other requirements for this rail
 - List specific details in the wiki documentation
 
 ## Test Points
 - Which signals should have test points?
 
+Ground
+Control
+MOSFET Gate
+Horn output
+
 ## LED Indicators
 - List any functions that should have an LED to indicate they are doing something. Include the 4 default debug LEDs for ISC boards
+
+LED1 Power 
+LED2 Horn control
+LED3 Horn output works
+
