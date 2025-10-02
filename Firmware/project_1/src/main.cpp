@@ -4,7 +4,6 @@
  */
 
 #include <mbed.h>
-// PROJECT 1 - Include something here!
 #include "pins.h"
 #include "peripherals.h"
 #include "can_struct.h"
@@ -28,25 +27,13 @@ void checkCANController() {
     common.checkCANController();
 }
 
-/*
- * This is where basic, one-time configuration code is run before entering
- * normal operation. It is recommended that you keep your configuration
- * code in setup() and call it at the beginning of main(), but it is not
- * mandatory.
- *
- * If you have global variables that need to be initialized, here would
- * be a good place to do it.
- */
 void setup() {
-
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
 	common.setupLEDs(&led1, &led2, &led3, &led4);
 
 	//Set Callbacks:
-	//These are side tasks (up to 8) that are run independently of the main
-	//algorithm / purpose of this board such as the heartbeat.
 	timing.addCallback(BRIZO_CAN::DEMO_HEART.RATE / 2, heartbeat);
 	timing.addCallback(CHECK_CAN_RATE_US, checkCANController);
 
@@ -54,20 +41,12 @@ void setup() {
 	//start the timing and check for wdt caused reset
 	common.startTimingCommon(&timing, &wdt_reset);
 
-	//if watchdog caused reset do something (probably log on CAN)
 	if(wdt_reset){
-
+		// Optional: Log or handle watchdog reset
 	}
 }
 
-/*
- * The shutdown function may not be required in all projects.
- * Think about what may be needed to be done in case of a car shutdown
- * Typically this may include alerts, turning off things (to avoid hard off), or disconnecting HV parts
- * Don't forget to feed the WDT to avoid a reset!
- */
 void shutdown_method() {
-
 	while(1) {
 		wdt.feed();
 	}
@@ -80,32 +59,29 @@ int main() {
 
 	CANMessage msg;
 	bool shutdown = false;
+
+	// --- PROJECT 2: Blink interval bounds ---
+	const uint32_t MIN_BLINK_US = 200000;   // 0.2 seconds
+	const uint32_t MAX_BLINK_US = 2000000;  // 2 seconds
+
 	// Main functionality
 	while (!shutdown) {
+		bool overflow;
+		uint32_t now = common.loopTime(&timing, &overflow);
 
-		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
-        bool overflow;
-        uint32_t now = common.loopTime(&timing, &overflow);
+		//clear CAN Buffer
+		while(!common.readCANMessage(msg)) {
+			common.toggleReceiveCANLED();
+		}
 
-        //clear CAN Buffer
-        while(!common.readCANMessage(msg)) {
-        	//you should do something with the relevant CAN messages here
-        	//toggle the CAN receive LED for only the messages you need to
-        	//receive for this board to function. This should be only a few
-        	//total messages. Do nothing for irrelevant messages
-        	common.toggleReceiveCANLED();
-        }
+		// --- PROJECT 2: Read potentiometer and scale to blink rate ---
+		float pot_val = pot.read(); // returns 0.0–1.0
+		uint32_t blink_interval = MIN_BLINK_US + pot_val * (MAX_BLINK_US - MIN_BLINK_US);
 
-        if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE_US)){
-        	// Blink the external LED
-        	led_blink = !led_blink;
-        	if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE_US)) {
-        	    led_blink = !led_blink;   // toggle LED state
-        	    printf("LED state: %d\n", led_blink.read());
-        	}
-        }
-
-        //PROJECT 2 - use the potentiometer to change the blink rate
+		// Toggle LED at dynamic interval
+		if (timing.tickThreshold(last_task_1_time, blink_interval)) {
+			led_blink = !led_blink;
+		}
 	}
 
 	shutdown_method();
