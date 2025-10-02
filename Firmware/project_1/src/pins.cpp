@@ -13,7 +13,7 @@
  */
 
 // PROJECT 2 - You can instantiate your AnalogIn object here
-
+AnalogOut ratepot(P_RATEPOT);
 /*
  * COMMON PIN OBJECT INSTANTIATIONS
  */
