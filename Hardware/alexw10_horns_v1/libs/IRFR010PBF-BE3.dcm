@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRFR010PBF-BE3
+D MOSFET 60V  N-CH HEXFET MOSFET D-PAK
+K
+F https://www.vishay.com/docs/91420/sihfr010.pdf
+$ENDCMP
+#
+#End Doc Library
