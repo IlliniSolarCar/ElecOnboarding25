@@ -5,12 +5,12 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
-#include "peripherals.h"
-#include "can_struct.h"
-#include "CAN/can_id.h"
 #include "CAN/can_data.h"
+#include "CAN/can_id.h"
 #include "can_buffer.h"
-
+#include "can_struct.h"
+#include "peripherals.h"
+#include "pins.h"
 
 /*
  * This is an example function. It blinks the heartbeat LED and sends
@@ -18,14 +18,13 @@
  * The heartbeat CAN Message includes the uptime
  */
 void heartbeat() {
-	if(common.toggleHeartbeatLED())
-		common.writeCANMessage(makeMessage(BRIZO_CAN::DEMO_HEART.ID, timer.read_us()));
+	if (common.toggleHeartbeatLED())
+		common.writeCANMessage(
+			makeMessage(BRIZO_CAN::DEMO_HEART.ID, timer.read_us()));
 }
 
 /** Stub to call hardware-interface for checking the CAN controller. */
-void checkCANController() {
-    common.checkCANController();
-}
+void checkCANController() { common.checkCANController(); }
 
 /*
  * This is where basic, one-time configuration code is run before entering
@@ -37,37 +36,34 @@ void checkCANController() {
  * be a good place to do it.
  */
 void setup() {
-
-	//set up the CAN interrupts and handling.
+	// set up the CAN interrupts and handling.
 	common.setupCAN();
-	//set up LEDs and turn them all off
+	// set up LEDs and turn them all off
 	common.setupLEDs(&led1, &led2, &led3, &led4);
 
-	//Set Callbacks:
-	//These are side tasks (up to 8) that are run independently of the main
-	//algorithm / purpose of this board such as the heartbeat.
+	// Set Callbacks:
+	// These are side tasks (up to 8) that are run independently of the main
+	// algorithm / purpose of this board such as the heartbeat.
 	timing.addCallback(BRIZO_CAN::DEMO_HEART.RATE / 2, heartbeat);
 	timing.addCallback(CHECK_CAN_RATE_US, checkCANController);
 
 	bool wdt_reset;
-	//start the timing and check for wdt caused reset
+	// start the timing and check for wdt caused reset
 	common.startTimingCommon(&timing, &wdt_reset);
 
-	//if watchdog caused reset do something (probably log on CAN)
-	if(wdt_reset){
-
+	// if watchdog caused reset do something (probably log on CAN)
+	if (wdt_reset) {
 	}
 }
 
 /*
  * The shutdown function may not be required in all projects.
  * Think about what may be needed to be done in case of a car shutdown
- * Typically this may include alerts, turning off things (to avoid hard off), or disconnecting HV parts
- * Don't forget to feed the WDT to avoid a reset!
+ * Typically this may include alerts, turning off things (to avoid hard off), or
+ * disconnecting HV parts Don't forget to feed the WDT to avoid a reset!
  */
 void shutdown_method() {
-
-	while(1) {
+	while (1) {
 		wdt.feed();
 	}
 }
@@ -77,31 +73,36 @@ int main() {
 	setup();
 	uint32_t last_task_1_time = timing.onTick(NULL);
 
+	uint32_t curr_blink_rate_us = 500000;
+
 	CANMessage msg;
 	bool shutdown = false;
 	// Main functionality
 	while (!shutdown) {
+		// on time overflow all callbacks will happen and timing reset to 0.
+		// Might be needed for other functions that rely on timing.
+		bool overflow;
+		uint32_t now = common.loopTime(&timing, &overflow);
 
-		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
-        bool overflow;
-        uint32_t now = common.loopTime(&timing, &overflow);
+		// clear CAN Buffer
+		while (!common.readCANMessage(msg)) {
+			// you should do something with the relevant CAN messages here
+			// toggle the CAN receive LED for only the messages you need to
+			// receive for this board to function. This should be only a few
+			// total messages. Do nothing for irrelevant messages
+			common.toggleReceiveCANLED();
+		}
 
-        //clear CAN Buffer
-        while(!common.readCANMessage(msg)) {
-        	//you should do something with the relevant CAN messages here
-        	//toggle the CAN receive LED for only the messages you need to
-        	//receive for this board to function. This should be only a few
-        	//total messages. Do nothing for irrelevant messages
-        	common.toggleReceiveCANLED();
-        }
+		// PROJECT 2 - use the potentiometer to change the blink rate
+		float pot_value = potentiometer.read();
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
-        }
+		uint32_t range = MAX_BLINK_RATE_US - MIN_BLINK_RATE_US;
+		curr_blink_rate_us = MIN_BLINK_RATE_US + (pot_value * range);
 
-        //PROJECT 2 - use the potentiometer to change the blink rate
-
-
+		if (timing.tickThreshold(last_task_1_time, curr_blink_rate_us)) {
+			// PROJECT 1 - add code here to actually make the LED blink
+			ledhb = !ledhb;
+		}
 	}
 
 	shutdown_method();
