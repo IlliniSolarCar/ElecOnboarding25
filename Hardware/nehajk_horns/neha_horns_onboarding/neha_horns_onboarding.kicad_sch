@@ -1459,7 +1459,7 @@
 		(uuid "2991af7d-277d-4fa7-bdd4-c9d4930a4ae1")
 	)
 	(junction
-		(at 143.51 81.28)
+		(at 143.51 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2d0ba706-a17a-4ee5-859c-02a9d3cce3df")
@@ -1870,7 +1870,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 81.28) (xy 143.51 85.09)
+			(xy 143.51 80.01) (xy 143.51 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1960,7 +1960,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 81.28) (xy 143.51 81.28)
+			(xy 148.59 80.01) (xy 143.51 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1970,7 +1970,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 74.93) (xy 143.51 81.28)
+			(xy 143.51 74.93) (xy 143.51 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2100,7 +2100,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 81.28) (xy 148.59 82.55)
+			(xy 148.59 80.01) (xy 148.59 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2525,7 +2525,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 125.73 102.87 0)
 			(effects
 				(font
@@ -2758,7 +2758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 161.29 129.54 0)
 			(effects
 				(font
@@ -2992,7 +2992,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 163.83 110.49 0)
 			(effects
 				(font
@@ -3463,7 +3463,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal"
 			(at 140.97 58.42 0)
 			(effects
 				(font
