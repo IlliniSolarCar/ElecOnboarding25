@@ -97,6 +97,12 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	if(led.read() == 0){
+				led.write(1);
+			}
+			else{
+				led.write(0);
+        	}
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
