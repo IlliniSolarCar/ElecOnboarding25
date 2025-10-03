@@ -2512,7 +2512,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal"
 			(at 38.1 100.33 0)
 			(effects
 				(font
@@ -2584,7 +2584,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
 			(at 77.47 102.87 0)
 			(effects
 				(font
@@ -2654,7 +2654,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
 			(at 89.8652 106.68 0)
 			(effects
 				(font
@@ -2790,7 +2790,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0210_1x02-1MP_P3.00mm_Horizontal"
 			(at 124.46 82.55 0)
 			(effects
 				(font
@@ -2859,7 +2859,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
 			(at 82.55 102.87 0)
 			(effects
 				(font
@@ -2928,7 +2928,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0210_1x02-1MP_P3.00mm_Horizontal"
 			(at 100.33 134.62 0)
 			(effects
 				(font
@@ -3063,7 +3063,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
 			(at 62.23 102.87 0)
 			(effects
 				(font
@@ -3132,7 +3132,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
 			(at 72.39 102.87 0)
 			(effects
 				(font
@@ -3278,7 +3278,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 124.714 107.696 90)
 			(effects
 				(font
@@ -3483,7 +3483,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
 			(at 67.31 102.87 0)
 			(effects
 				(font
@@ -3550,7 +3550,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
 			(at 52.07 102.87 0)
 			(effects
 				(font
@@ -3683,7 +3683,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
 			(at 123.19 114.3 0)
 			(effects
 				(font
@@ -3883,7 +3883,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0210_1x02-1MP_P3.00mm_Horizontal"
 			(at 124.46 90.17 0)
 			(effects
 				(font
@@ -3950,7 +3950,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
 			(at 57.15 102.87 0)
 			(effects
 				(font
@@ -4020,7 +4020,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuse_Bourns_MF-RG300"
 			(at 131.572 95.25 90)
 			(effects
 				(font
