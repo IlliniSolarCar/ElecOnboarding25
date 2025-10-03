@@ -1785,12 +1785,6 @@
 		(uuid "13b8835a-ff57-42ff-8196-b81c36e255d0")
 	)
 	(junction
-		(at 104.14 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "147b656a-81cc-4332-8139-7a1d8a223fc6")
-	)
-	(junction
 		(at 59.69 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1803,10 +1797,22 @@
 		(uuid "28e39d90-9780-47a6-972f-1aae9b10544c")
 	)
 	(junction
+		(at 104.14 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2962a1a3-3533-4cbe-b99a-44c335a6b868")
+	)
+	(junction
 		(at 46.99 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2f6d6a04-c97b-439c-b282-27ca9a24c37d")
+	)
+	(junction
+		(at 72.39 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ae25ae1-7238-4b1d-8164-05164cd6458c")
 	)
 	(junction
 		(at 29.21 113.03)
@@ -1825,6 +1831,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "763643af-7fd9-4be3-9f0e-e9dcb11c3348")
+	)
+	(junction
+		(at 100.33 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80072f5f-05db-44f9-ae75-1b32bf1e4719")
 	)
 	(junction
 		(at 31.75 40.64)
@@ -1926,13 +1938,23 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 82.55) (xy 104.14 82.55)
+			(xy 95.25 82.55) (xy 100.33 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "106694c7-33f6-4385-b430-1891b767a63e")
+	)
+	(wire
+		(pts
+			(xy 100.33 91.44) (xy 100.33 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ba78934-f809-4e35-a84a-d5d9026d6943")
 	)
 	(wire
 		(pts
@@ -1953,6 +1975,16 @@
 			(type default)
 		)
 		(uuid "28418bfe-089b-4224-b6df-9857c6f55fe7")
+	)
+	(wire
+		(pts
+			(xy 72.39 82.55) (xy 72.39 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f12648b-483c-4165-8497-6429de6caa24")
 	)
 	(wire
 		(pts
@@ -1996,6 +2028,26 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 82.55) (xy 104.14 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43c452d3-1d21-461c-a96b-f9984ca656ac")
+	)
+	(wire
+		(pts
+			(xy 91.44 91.44) (xy 100.33 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4784cb61-5328-4db1-bb72-9ba1a4d70655")
+	)
+	(wire
+		(pts
 			(xy 110.49 30.48) (xy 110.49 40.64)
 		)
 		(stroke
@@ -2036,6 +2088,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 90.17) (xy 104.14 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e7e5e92-f59c-4885-b044-efc43e8a0d70")
+	)
+	(wire
+		(pts
 			(xy 31.75 48.26) (xy 46.99 48.26)
 		)
 		(stroke
@@ -2066,7 +2128,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 87.63) (xy 72.39 82.55)
+			(xy 72.39 93.98) (xy 72.39 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2313,6 +2375,16 @@
 			(type default)
 		)
 		(uuid "ea0b8e73-5f46-47d0-b6be-dcf8995ac5fa")
+	)
+	(wire
+		(pts
+			(xy 72.39 91.44) (xy 83.82 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee83cfaf-4c9f-427d-baf6-72b3ac8d931e")
 	)
 	(wire
 		(pts
@@ -2792,7 +2864,7 @@
 	)
 	(symbol
 		(lib_id "Diode:S2JTR")
-		(at 104.14 93.98 90)
+		(at 87.63 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2801,25 +2873,23 @@
 		(fields_autoplaced yes)
 		(uuid "459d75a6-46e4-4275-bd64-e5f015b0ac67")
 		(property "Reference" "D2"
-			(at 106.68 92.7099 90)
+			(at 87.63 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "S2JTR"
-			(at 106.68 95.2499 90)
+			(at 87.63 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMB"
-			(at 108.585 93.98 0)
+			(at 87.63 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2828,7 +2898,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.smc-diodes.com/propdf/S2A-S2M%20N0562%20REV.A.pdf"
-			(at 104.14 93.98 0)
+			(at 87.63 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2837,7 +2907,7 @@
 			)
 		)
 		(property "Description" "600V 2A General Purpose Rectifier Diode, SMB"
-			(at 104.14 93.98 0)
+			(at 87.63 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2888,7 +2958,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 92.71 77.47 0)
 			(effects
 				(font
@@ -3023,7 +3093,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 34.29 86.36 0)
 			(effects
 				(font
@@ -3839,7 +3909,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal"
 			(at 31.75 119.38 0)
 			(effects
 				(font
@@ -4048,7 +4118,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 73.66 77.47 0)
 			(effects
 				(font
@@ -4158,16 +4228,15 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 72.39 87.63 180)
+		(at 72.39 93.98 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f4420bd0-268b-4259-ab71-37a33ad58821")
 		(property "Reference" "#PWR08"
-			(at 72.39 83.82 0)
+			(at 72.39 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4176,7 +4245,7 @@
 			)
 		)
 		(property "Value" "+24V"
-			(at 72.39 92.71 0)
+			(at 72.39 98.298 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4184,7 +4253,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 87.63 0)
+			(at 72.39 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4193,7 +4262,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 87.63 0)
+			(at 72.39 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4202,7 +4271,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 72.39 87.63 0)
+			(at 72.39 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
