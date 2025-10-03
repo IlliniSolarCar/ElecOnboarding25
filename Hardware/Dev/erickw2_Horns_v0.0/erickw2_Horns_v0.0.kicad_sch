@@ -1203,22 +1203,20 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "2A"
-				(at 2.54 1.2701 0)
+			(property "Reference" "F"
+				(at 2.032 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "Fuse"
-				(at 2.54 -1.2699 0)
+				(at -1.905 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -1940,16 +1938,10 @@
 		(uuid "04b9ffcb-4645-4c7f-9d55-3757d3eaac2d")
 	)
 	(junction
-		(at 43.18 91.44)
+		(at 125.73 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0b57f13e-5b0e-40cb-af8b-4311c76fcc38")
-	)
-	(junction
-		(at 43.18 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "28ac34e8-05c1-4021-8986-0b91d513af1b")
+		(uuid "13ccf34e-05f2-40f2-bd57-13c1d30e794a")
 	)
 	(junction
 		(at 45.72 100.33)
@@ -1962,12 +1954,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56a63c91-4d7a-424a-9899-43e25c107485")
-	)
-	(junction
-		(at 125.73 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5cca45c6-af15-4839-be4d-f3c037dcabb3")
 	)
 	(junction
 		(at 82.55 105.41)
@@ -2034,12 +2020,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c525fe74-aa9f-43b1-9f28-641544ad752b")
-	)
-	(junction
-		(at 125.73 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c7f65a14-fe8a-4672-b024-be5204085aa8")
 	)
 	(junction
 		(at 119.38 134.62)
@@ -2115,16 +2095,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 114.3) (xy 125.73 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15daa9af-95b3-4608-87b2-e741dfbc35eb")
-	)
-	(wire
-		(pts
 			(xy 129.54 90.17) (xy 133.35 90.17)
 		)
 		(stroke
@@ -2152,16 +2122,6 @@
 			(type default)
 		)
 		(uuid "207570a9-3e61-4dff-bf75-176163e1a92f")
-	)
-	(wire
-		(pts
-			(xy 125.73 107.95) (xy 125.73 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2594d83c-38d9-4671-a8e3-a89268bcaeec")
 	)
 	(wire
 		(pts
@@ -2285,6 +2245,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 114.3) (xy 125.73 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68590f5f-a5dd-49fc-bd1d-5aee2d33e108")
+	)
+	(wire
+		(pts
 			(xy 133.35 109.22) (xy 133.35 113.03)
 		)
 		(stroke
@@ -2365,6 +2335,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 111.76) (xy 125.73 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2b7b212-6360-4a03-8f5b-031b220e4929")
+	)
+	(wire
+		(pts
 			(xy 52.07 105.41) (xy 57.15 105.41)
 		)
 		(stroke
@@ -2392,26 +2372,6 @@
 			(type default)
 		)
 		(uuid "a6c6aa14-ad69-48e7-ab50-c1b2c485623d")
-	)
-	(wire
-		(pts
-			(xy 115.57 107.95) (xy 118.11 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7420903-4ac1-475a-91ee-3e69b3ca2ce2")
-	)
-	(wire
-		(pts
-			(xy 125.73 104.14) (xy 125.73 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae55bfc4-1156-4126-93fe-7521233e5b90")
 	)
 	(wire
 		(pts
@@ -2515,7 +2475,7 @@
 		(uuid "b29c6239-cb8f-4a08-9a12-039c31413b2f")
 	)
 	(label "Horn Control"
-		(at 114.3 121.92 0)
+		(at 125.73 121.92 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2524,76 +2484,6 @@
 			(justify left bottom)
 		)
 		(uuid "fedb3510-004b-4ada-a81b-77b83a73b264")
-	)
-	(symbol
-		(lib_id "device:Fuse")
-		(at 133.35 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0281439c-95f2-4263-8cd6-116452f685ae")
-		(property "Reference" "2A"
-			(at 135.89 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Fuse"
-			(at 135.89 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 131.572 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 133.35 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 133.35 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5709a018-a22a-44a7-b09f-fb7e5162581a")
-		)
-		(pin "2"
-			(uuid "9ca85402-ab7e-4f0b-b51b-e6e542ad092f")
-		)
-		(instances
-			(project ""
-				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
-					(reference "2A")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_name "Conn_01x03_1")
@@ -2874,73 +2764,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 43.18 105.41 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18b3a3a8-3812-477c-bb27-e0c14b363ae7")
-		(property "Reference" "#FLG02"
-			(at 41.275 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 39.37 105.4099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 43.18 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 43.18 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2a1581eb-28a6-484e-a8b5-24f0e034d0a3")
-		)
-		(instances
-			(project ""
-				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
-					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "Conn_01x02_1")
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 124.46 82.55 180)
@@ -3010,73 +2833,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 115.57 107.95 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2aa98a6c-349b-4279-b874-a2fe80cafcfe")
-		(property "Reference" "#PWR08"
-			(at 109.22 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 111.76 107.9499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.57 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 115.57 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 115.57 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ca6dcde9-257b-4039-b29d-b67eeb76df22")
-		)
-		(instances
-			(project ""
-				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 82.55 102.87 0)
 		(unit 1)
@@ -3140,73 +2896,6 @@
 			(project "erickw2_Horns_v0.0"
 				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
 					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 43.18 91.44 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "44edd11a-0e6e-40e2-8e1a-7e8e4fff143a")
-		(property "Reference" "#FLG03"
-			(at 41.275 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 39.37 91.4399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 43.18 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 43.18 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b6385f21-97ec-4748-9692-b34b0170104c")
-		)
-		(instances
-			(project ""
-				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
-					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -3563,7 +3252,7 @@
 	)
 	(symbol
 		(lib_id "device:R_US")
-		(at 121.92 107.95 90)
+		(at 125.73 107.95 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3572,23 +3261,25 @@
 		(fields_autoplaced yes)
 		(uuid "77d5b979-ad83-42d5-98e5-2ef110a67297")
 		(property "Reference" "R1"
-			(at 121.92 101.6 90)
+			(at 128.27 106.6799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "1 KOhm"
-			(at 121.92 104.14 90)
+			(at 128.27 109.2199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 122.174 106.934 90)
+			(at 124.714 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3597,7 +3288,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 121.92 107.95 0)
+			(at 125.73 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3606,7 +3297,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 121.92 107.95 0)
+			(at 125.73 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4296,6 +3987,76 @@
 			(project "erickw2_Horns_v0.0"
 				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:Fuse")
+		(at 133.35 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d214441c-0a2d-4499-8ee3-1c69e7717140")
+		(property "Reference" "F1"
+			(at 135.89 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2A"
+			(at 135.89 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 131.572 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 133.35 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ef062889-015b-4de9-8b2d-1914d05eebc6")
+		)
+		(pin "1"
+			(uuid "91d7879d-388d-4e1c-8f49-8dd1d9018635")
+		)
+		(instances
+			(project ""
+				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
+					(reference "F1")
 					(unit 1)
 				)
 			)
