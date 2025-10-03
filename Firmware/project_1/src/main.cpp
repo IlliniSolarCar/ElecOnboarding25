@@ -5,12 +5,13 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.cpp"
+#include "setup.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
-#include "pins.h"
 
 
 /*
@@ -77,7 +78,7 @@ void shutdown_method() {
 }
 
 void toggleLed() {
-	blink_led.write(~blink_led.read());
+	blink_led.write(!blink_led.read());
 }
 
 uint32_t mapPot(float val, uint32_t min, uint32_t max) {
