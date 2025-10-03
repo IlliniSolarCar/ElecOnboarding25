@@ -1,0 +1,11 @@
+Info: Processing symbol 'D1:LED_SMD:LED_0603_1608Metric'.
+Info: Processing symbol 'J1:Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'R1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'SW1:Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile'.
+Add D1 (footprint 'LED_SMD:LED_0603_1608Metric').
+Add J1 (footprint 'Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical').
+Add R1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Add SW1 (footprint 'Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile').
+
+
+Info: Total warnings: 0, errors: 0.
