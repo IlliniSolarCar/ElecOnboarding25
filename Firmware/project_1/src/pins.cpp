@@ -23,3 +23,6 @@ DigitalOut led2(P_LED2);
 DigitalOut led3(P_LED3);
 DigitalOut led4(P_LED4);
 // PROJECT 1 - You can instantiate your DigitalOut object here
+
+
+AnalogIn potentiometer1(PIN_POTENTIOMETER);

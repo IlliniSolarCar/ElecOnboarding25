@@ -86,6 +86,8 @@ int main() {
         bool overflow;
         uint32_t now = common.loopTime(&timing, &overflow);
 
+        float potentiometer_reading=potentiometer1.read();
+
         //clear CAN Buffer
         while(!common.readCANMessage(msg)) {
         	//you should do something with the relevant CAN messages here
@@ -97,6 +99,10 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	if(myled.read()==0)
+        		myled.write()=1;
+        	else()
+        		myled.write()=0;
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
