@@ -3,8 +3,8 @@
 	<name>project_1</name>
 	<comment></comment>
 	<projects>
-		<project>mbed</project>
 		<project>common</project>
+		<project>mbed</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
