@@ -41,3 +41,5 @@ doc/
 
 # Exclude lock files #
 *.lck
+
+gerber_files/
