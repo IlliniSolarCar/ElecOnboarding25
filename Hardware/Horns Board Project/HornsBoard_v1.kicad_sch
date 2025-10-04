@@ -1706,12 +1706,6 @@
 		(uuid "463dd1f1-8a8c-48b0-9ee7-7d4f0a12a3f3")
 	)
 	(junction
-		(at 139.7 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4a5023e6-af7e-458b-9442-dc87c86c9a2d")
-	)
-	(junction
 		(at 127 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1734,12 +1728,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "70316f9d-54a0-4804-acf0-5b39a22f0a81")
-	)
-	(junction
-		(at 152.4 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7064e1d9-817a-4d55-9e0b-e0569afd091b")
 	)
 	(junction
 		(at 157.48 90.17)
@@ -1951,7 +1939,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 100.33) (xy 139.7 92.71)
+			(xy 139.7 88.9) (xy 139.7 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1998,16 +1986,6 @@
 			(type default)
 		)
 		(uuid "42b8641e-4f9c-4fe5-b149-e2000467b6a9")
-	)
-	(wire
-		(pts
-			(xy 152.4 90.17) (xy 152.4 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47cb248a-1810-433e-8c28-ba49cdb6b0e5")
 	)
 	(wire
 		(pts
@@ -2068,6 +2046,16 @@
 			(type default)
 		)
 		(uuid "539d34ff-33c4-4301-8f9f-29d459ecc0bf")
+	)
+	(wire
+		(pts
+			(xy 152.4 99.06) (xy 152.4 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56c6304f-8bdf-4f56-a3be-048026f59dea")
 	)
 	(wire
 		(pts
@@ -2151,16 +2139,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 92.71) (xy 143.51 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dc53686-5736-49ba-8b3c-b9a02969638d")
-	)
-	(wire
-		(pts
 			(xy 165.1 83.82) (xy 165.1 90.17)
 		)
 		(stroke
@@ -2178,16 +2156,6 @@
 			(type default)
 		)
 		(uuid "75d14875-df96-4703-a535-63549afd3a00")
-	)
-	(wire
-		(pts
-			(xy 139.7 92.71) (xy 139.7 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d61df54-1cae-4b09-b782-f23e0e341d0c")
 	)
 	(wire
 		(pts
@@ -2211,7 +2179,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 92.71) (xy 152.4 114.3)
+			(xy 152.4 90.17) (xy 152.4 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2568,16 +2536,6 @@
 			(type default)
 		)
 		(uuid "face2e95-61b3-4db3-accb-691ff7ab9cdb")
-	)
-	(wire
-		(pts
-			(xy 148.59 92.71) (xy 152.4 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd04ab9a-a4d7-47fc-ad66-fc2f1723279e")
 	)
 	(label "HORN_CTRL"
 		(at 100.33 91.44 180)
@@ -3538,7 +3496,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 147.32 100.33 0)
 			(effects
 				(font
@@ -3712,7 +3670,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 93.98 93.98 0)
 			(effects
 				(font
@@ -3998,7 +3956,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 147.32 109.22 0)
 			(effects
 				(font
@@ -4242,7 +4200,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal"
 			(at 196.85 90.17 0)
 			(effects
 				(font
@@ -4307,7 +4265,7 @@
 	)
 	(symbol
 		(lib_id "device:D_Small")
-		(at 146.05 92.71 180)
+		(at 152.4 96.52 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4316,23 +4274,25 @@
 		(fields_autoplaced yes)
 		(uuid "ebd25b0c-21b8-4be1-a4ec-09ed3b9368dd")
 		(property "Reference" "D1"
-			(at 146.05 86.36 0)
+			(at 154.94 95.2499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "D_Small"
-			(at 146.05 88.9 0)
+			(at 154.94 97.7899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
-			(at 146.05 92.71 90)
+			(at 152.4 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4341,7 +4301,7 @@
 			)
 		)
 		(property "Datasheet" "~https://www.diodes.com/assets/Datasheets/ds14002.pdf"
-			(at 146.05 92.71 90)
+			(at 152.4 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4350,7 +4310,7 @@
 			)
 		)
 		(property "Description" "Diode, small symbol"
-			(at 146.05 92.71 0)
+			(at 152.4 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4359,7 +4319,7 @@
 			)
 		)
 		(property "MPN" "ES2DA-13-F"
-			(at 146.05 92.71 0)
+			(at 152.4 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4368,7 +4328,7 @@
 			)
 		)
 		(property "Notes" ""
-			(at 146.05 92.71 0)
+			(at 152.4 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
