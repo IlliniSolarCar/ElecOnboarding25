@@ -104,7 +104,8 @@ int main() {
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
+		float potValue = pot.read();
+		TASK_1_RATE_US = 100000 + (int)(potValue * 900000);
 
 	}
 
