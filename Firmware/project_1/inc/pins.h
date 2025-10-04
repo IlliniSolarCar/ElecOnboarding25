@@ -28,7 +28,7 @@
 // PROJECT 1 - You can define a pin macro here
 #define P_LED5 P0_4
 
-#define P_POT  A0
+#define P_POT A0
 
 /*
  * COMMON PIN OBJECT DECLARATIONS
