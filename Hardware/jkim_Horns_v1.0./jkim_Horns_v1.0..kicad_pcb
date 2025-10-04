@@ -418,7 +418,7 @@
 		(property "Reference" "REF**"
 			(at 1.5 -4.2 0)
 			(layer "F.SilkS")
-			(uuid "86bd4fa6-e6bd-454f-8cd1-096f37bb9ebd")
+			(uuid "306156aa-8568-47c7-9f09-ec460c748001")
 			(effects
 				(font
 					(size 1 1)
@@ -429,7 +429,7 @@
 		(property "Value" "MountingHole_3.2mm_M3"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "0a93f3e7-29c2-4a81-893e-f95e83037fc7")
+			(uuid "aa62d8b1-69f5-43a7-9ec0-e24da06e3cd7")
 			(effects
 				(font
 					(size 1 1)
@@ -483,7 +483,7 @@
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "dbe0ac09-55d6-4a20-b50e-e550556ffe9b")
+			(uuid "2590a72a-c77a-431e-8151-71c5332807ea")
 		)
 		(fp_circle
 			(center 0 0)
@@ -494,12 +494,12 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "24ed94e0-a186-4fb1-95f0-3799c6afb2a1")
+			(uuid "328aca60-349e-462b-b2bf-5444182eb4bd")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "8a97f552-167a-4980-9302-ac1d9a038f27")
+			(uuid "6495543c-882b-4804-81f2-7eb26c02a8b0")
 			(effects
 				(font
 					(size 1 1)
@@ -512,7 +512,7 @@
 			(size 3.2 3.2)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
-			(uuid "d01994f3-2746-4b05-88be-2509342f7c01")
+			(uuid "c4012cd2-f628-4c5f-a398-f3a08f7f352e")
 		)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
@@ -524,7 +524,7 @@
 		(property "Reference" "REF**"
 			(at 0 -4.2 0)
 			(layer "F.SilkS")
-			(uuid "86bd4fa6-e6bd-454f-8cd1-096f37bb9ebd")
+			(uuid "02cf2e18-f27c-4132-b6c1-2a20d58d6415")
 			(effects
 				(font
 					(size 1 1)
@@ -535,7 +535,7 @@
 		(property "Value" "MountingHole_3.2mm_M3"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "0a93f3e7-29c2-4a81-893e-f95e83037fc7")
+			(uuid "859d5083-68a2-4a6d-b481-69848a5949b6")
 			(effects
 				(font
 					(size 1 1)
@@ -589,7 +589,7 @@
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "dbe0ac09-55d6-4a20-b50e-e550556ffe9b")
+			(uuid "ef988818-aa47-4ffc-a9ab-54d6ca41be7e")
 		)
 		(fp_circle
 			(center 0 0)
@@ -600,12 +600,12 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "24ed94e0-a186-4fb1-95f0-3799c6afb2a1")
+			(uuid "fa308b69-7533-4da9-87d3-cb88d2e332b2")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "8a97f552-167a-4980-9302-ac1d9a038f27")
+			(uuid "d8ec10dc-9d4e-4d82-a17c-6a13dbbaf3e9")
 			(effects
 				(font
 					(size 1 1)
@@ -618,7 +618,7 @@
 			(size 3.2 3.2)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
-			(uuid "d01994f3-2746-4b05-88be-2509342f7c01")
+			(uuid "90a83299-914a-46fb-8314-890c58bd1768")
 		)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
@@ -2560,7 +2560,7 @@
 		(descr "TO-252 / DPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO252/PG-TO252-3-1/")
 		(tags "DPAK TO-252 DPAK-3 TO-252-3 SOT-428")
 		(property "Reference" "Q1"
-			(at -1.25 -4.5 360)
+			(at -1.25 -4.5 0)
 			(layer "F.SilkS")
 			(uuid "99a045ab-340b-4128-b570-01316004b6c5")
 			(effects
@@ -2571,7 +2571,7 @@
 			)
 		)
 		(property "Value" "Q_NMOS_DGS"
-			(at 0 4.5 360)
+			(at 0 4.5 0)
 			(layer "F.Fab")
 			(uuid "8687e9c4-874f-49d8-aaa0-49a291676f39")
 			(effects
@@ -2582,7 +2582,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5f05f758-99f4-4700-9ba1-5335210b81b7")
@@ -2594,7 +2594,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/91420/sihfr010.pdf"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b0f249f1-a5ea-4a27-af25-a328e69943f9")
@@ -2606,7 +2606,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor, drain/gate/source"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ad338ce4-cfb1-4509-9c0e-4a31764792f3")
@@ -2859,7 +2859,7 @@
 			(uuid "da247ab9-c955-4c7c-bece-66fa1af7e62d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "9a060430-2737-4aac-a9ba-f99ff9300bf7")
 			(effects
@@ -4439,7 +4439,7 @@
 		(property "Reference" "REF**"
 			(at 0 -4.2 0)
 			(layer "F.SilkS")
-			(uuid "86bd4fa6-e6bd-454f-8cd1-096f37bb9ebd")
+			(uuid "f145f692-2d49-4586-995f-554b2d80b14a")
 			(effects
 				(font
 					(size 1 1)
@@ -4450,7 +4450,7 @@
 		(property "Value" "MountingHole_3.2mm_M3"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "0a93f3e7-29c2-4a81-893e-f95e83037fc7")
+			(uuid "719161ee-8845-4b13-8218-b5aa1dbf4e2f")
 			(effects
 				(font
 					(size 1 1)
@@ -4504,7 +4504,7 @@
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "dbe0ac09-55d6-4a20-b50e-e550556ffe9b")
+			(uuid "927b9e79-3c02-41e5-8e13-149d817603cc")
 		)
 		(fp_circle
 			(center 0 0)
@@ -4515,12 +4515,12 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "24ed94e0-a186-4fb1-95f0-3799c6afb2a1")
+			(uuid "5dc3948e-c01b-493b-9a91-19ae53b6d1e6")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "8a97f552-167a-4980-9302-ac1d9a038f27")
+			(uuid "196728b3-7c62-403c-a3fe-c3c8a7875e7f")
 			(effects
 				(font
 					(size 1 1)
@@ -4533,7 +4533,7 @@
 			(size 3.2 3.2)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
-			(uuid "d01994f3-2746-4b05-88be-2509342f7c01")
+			(uuid "2cfc905b-b614-4d3e-bd99-8366b104b6d8")
 		)
 	)
 	(footprint "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
