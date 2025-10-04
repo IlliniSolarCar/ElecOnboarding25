@@ -1615,7 +1615,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x02_P3.00mm_Horizontal"
 			(at 76.2 97.79 0)
 			(effects
 				(font
