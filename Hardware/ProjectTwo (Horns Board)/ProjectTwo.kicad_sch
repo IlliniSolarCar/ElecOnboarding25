@@ -2144,6 +2144,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "AO3400A"
+			(at 121.92 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "62f0160b-7356-4a80-b2fa-1decfe793804")
 		)
@@ -2187,7 +2196,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
 			(at 104.14 90.17 0)
 			(effects
 				(font
@@ -2196,7 +2205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.sameskydevices.com/product/resource/cps-5449-105pm.pdf"
 			(at 104.14 90.17 0)
 			(effects
 				(font
@@ -2206,6 +2215,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 104.14 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CPS-5449-105PM"
 			(at 104.14 90.17 0)
 			(effects
 				(font
@@ -2254,7 +2272,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 76.2 85.3948 0)
 			(effects
 				(font
@@ -2273,6 +2291,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 72.39 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 72.39 86.36 0)
 			(effects
 				(font
@@ -2321,7 +2348,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 76.2 80.3148 0)
 			(effects
 				(font
@@ -2340,6 +2367,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 72.39 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 72.39 81.28 0)
 			(effects
 				(font
@@ -2388,7 +2424,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 72.39 106.68 0)
 			(effects
 				(font
@@ -2407,6 +2443,15 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, US symbol"
+			(at 72.39 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 72.39 106.68 0)
 			(effects
 				(font
@@ -2455,7 +2500,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
 			(at 123.698 104.14 90)
 			(effects
 				(font
@@ -2474,6 +2519,15 @@
 			)
 		)
 		(property "Description" "Fuse"
+			(at 121.92 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 121.92 104.14 0)
 			(effects
 				(font
@@ -2522,7 +2576,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
 			(at 95.25 87.63 0)
 			(effects
 				(font
@@ -2531,7 +2585,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.sameskydevices.com/product/resource/cps-5449-105pm.pdf"
 			(at 95.25 87.63 0)
 			(effects
 				(font
@@ -2541,6 +2595,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 95.25 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CPS-5449-105PM"
 			(at 95.25 87.63 0)
 			(effects
 				(font
@@ -2656,7 +2719,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 76.2 100.6348 0)
 			(effects
 				(font
@@ -2675,6 +2738,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 72.39 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 72.39 101.6 0)
 			(effects
 				(font
@@ -2724,7 +2796,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-3_P5.08mm"
 			(at 54.61 91.44 0)
 			(effects
 				(font
@@ -2743,6 +2815,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 54.61 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 54.61 91.44 0)
 			(effects
 				(font
@@ -2794,7 +2875,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
 			(at 113.03 94.488 90)
 			(effects
 				(font
@@ -2813,6 +2894,15 @@
 			)
 		)
 		(property "Description" "Fuse"
+			(at 113.03 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 113.03 92.71 0)
 			(effects
 				(font
@@ -2927,7 +3017,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 110.236 108.966 90)
 			(effects
 				(font
@@ -2946,6 +3036,15 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 110.49 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 110.49 107.95 0)
 			(effects
 				(font
@@ -2994,7 +3093,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 76.2 90.4748 0)
 			(effects
 				(font
@@ -3013,6 +3112,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 72.39 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 72.39 91.44 0)
 			(effects
 				(font
@@ -3194,7 +3302,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 76.2 75.2348 0)
 			(effects
 				(font
@@ -3213,6 +3321,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 72.39 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 72.39 76.2 0)
 			(effects
 				(font
@@ -3261,7 +3378,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 121.92 106.9848 0)
 			(effects
 				(font
@@ -3280,6 +3397,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 118.11 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 118.11 107.95 0)
 			(effects
 				(font
@@ -3328,7 +3454,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 88.9 91.44 0)
 			(effects
 				(font
@@ -3347,6 +3473,15 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 88.9 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 88.9 91.44 0)
 			(effects
 				(font
@@ -3395,7 +3530,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 76.2 95.5548 0)
 			(effects
 				(font
@@ -3414,6 +3549,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 72.39 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 72.39 96.52 0)
 			(effects
 				(font
@@ -3529,7 +3673,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
 			(at 100.33 110.49 0)
 			(effects
 				(font
@@ -3538,7 +3682,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.sameskydevices.com/product/resource/cps-5449-105pm.pdf"
 			(at 100.33 110.49 0)
 			(effects
 				(font
@@ -3548,6 +3692,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 100.33 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CPS-5449-105PM"
 			(at 100.33 110.49 0)
 			(effects
 				(font
@@ -3596,7 +3749,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 76.2 70.1548 0)
 			(effects
 				(font
@@ -3615,6 +3768,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 72.39 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 72.39 71.12 0)
 			(effects
 				(font

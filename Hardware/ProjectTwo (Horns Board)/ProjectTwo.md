@@ -48,7 +48,7 @@
  - Then list each connector, specific type/requirements, and pinout such as:
 	Power in 
 	Horn Control
-	Horn Outs, x2 linked in series
+	Horn Outs, x2 linked in series 
  - Power In (KK 2.54)
 	- GND
 	- +12V
