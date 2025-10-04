@@ -40,7 +40,13 @@
 								</option>
 								<option id="gnu.cpp.compiler.option.other.other.884456293" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions" valueType="string"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1323900660" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;C:\Users\user\ElecOnboarding25\Firmware\common\api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\user\ElecOnboarding25\Firmware\common\hal&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zephyr-common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\user\ElecOnboarding25\Firmware\mbed\libraries\mbed\api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\user\ElecOnboarding25\Firmware\mbed\libraries\mbed\hal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\user\ElecOnboarding25\Firmware\mbed\libraries\mbed\targets\cmsis&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\user\ElecOnboarding25\Firmware\mbed\libraries\mbed\targets\hal\TARGET_NXP\TARGET_LPC15XX&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/common}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
@@ -593,4 +599,5 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
 		</scannerConfigBuildInfo>
 	</storageModule>
+	<storageModule moduleId="openCmsis"/>
 </cproject>
