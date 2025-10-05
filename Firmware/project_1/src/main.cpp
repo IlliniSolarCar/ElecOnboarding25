@@ -4,7 +4,8 @@
  */
 
 #include <mbed.h>
-// PROJECT 1 - Include something here!
+#include <setup.h>
+#include <pins.h>
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -72,6 +73,8 @@ void shutdown_method() {
 	}
 }
 
+DigitalOut led(LED1);
+
 int main() {
 	// Configure all of our peripherals and globals
 	setup();
@@ -95,8 +98,8 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
+        if(timing.tickThreshold(last_task_1_time, blink_rate)){
+        	led.write(!led.read());
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
