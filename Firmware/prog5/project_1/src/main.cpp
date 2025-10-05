@@ -95,14 +95,21 @@ int main() {
         	//total messages. Do nothing for irrelevant messages
         	common.toggleReceiveCANLED();
         }
-
+        /*
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
         	led_FOO.write(!led_FOO.read());
         }
-
+		*/
         //PROJECT 2 - use the potentiometer to change the blink rate
+        float pot_value = pot.read();
+        const uint32_t min = 100000;
+        const uint32_t max = 1000000;
+        uint32_t blink_interval = min + (uint32_t)((max - min) * (1.0f - pot_value));
 
+        if (timing.tickThreshold(last_task_1_time, blink_interval)) {
+        	led_FOO.write(!led_FOO.read());
+        }
 
 	}
 
