@@ -2721,7 +2721,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGZHdWNiRVpmSnZjTDRPa3k3R1ZpazhualFvZ3xBQ3Jtc0tsZVBMT1hyQVFmQ1pfb1g4SkJNOTJwQXI0Z1paTTFMcUFadXg2eG5HYXVUNExoU2RGMngwVU5WMFdhVzhxbjdrZ0tGcndNY1BSeFVlTzZIWTh5cnp4Q3BJVDB6RC1pYkp1aFZHVkUxNG50YlhKQ284UQ&q=https%3A%2F%2Fwww.molex.com%2Fpdm_docs%2Fsd%2F022272021_sd.pdf&v=MJEWDFNcRlM"
+		(property "Datasheet" "~"
 			(at 67.31 132.08 0)
 			(effects
 				(font
@@ -3134,7 +3134,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGZHdWNiRVpmSnZjTDRPa3k3R1ZpazhualFvZ3xBQ3Jtc0tsZVBMT1hyQVFmQ1pfb1g4SkJNOTJwQXI0Z1paTTFMcUFadXg2eG5HYXVUNExoU2RGMngwVU5WMFdhVzhxbjdrZ0tGcndNY1BSeFVlTzZIWTh5cnp4Q3BJVDB6RC1pYkp1aFZHVkUxNG50YlhKQ284UQ&q=https%3A%2F%2Fwww.molex.com%2Fpdm_docs%2Fsd%2F022272021_sd.pdf&v=MJEWDFNcRlM"
+		(property "Datasheet" "~"
 			(at 80.01 121.92 0)
 			(effects
 				(font
@@ -3419,7 +3419,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGZHdWNiRVpmSnZjTDRPa3k3R1ZpazhualFvZ3xBQ3Jtc0tsZVBMT1hyQVFmQ1pfb1g4SkJNOTJwQXI0Z1paTTFMcUFadXg2eG5HYXVUNExoU2RGMngwVU5WMFdhVzhxbjdrZ0tGcndNY1BSeFVlTzZIWTh5cnp4Q3BJVDB6RC1pYkp1aFZHVkUxNG50YlhKQ284UQ&q=https%3A%2F%2Fwww.molex.com%2Fpdm_docs%2Fsd%2F022272021_sd.pdf&v=MJEWDFNcRlM"
+		(property "Datasheet" "~"
 			(at 119.38 107.95 0)
 			(effects
 				(font
@@ -3767,7 +3767,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGZHdWNiRVpmSnZjTDRPa3k3R1ZpazhualFvZ3xBQ3Jtc0tsZVBMT1hyQVFmQ1pfb1g4SkJNOTJwQXI0Z1paTTFMcUFadXg2eG5HYXVUNExoU2RGMngwVU5WMFdhVzhxbjdrZ0tGcndNY1BSeFVlTzZIWTh5cnp4Q3BJVDB6RC1pYkp1aFZHVkUxNG50YlhKQ284UQ&q=https%3A%2F%2Fwww.molex.com%2Fpdm_docs%2Fsd%2F022272021_sd.pdf&v=MJEWDFNcRlM"
+		(property "Datasheet" "~"
 			(at 119.38 100.33 0)
 			(effects
 				(font
