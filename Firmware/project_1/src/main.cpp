@@ -103,6 +103,12 @@ int main() {
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
+        float p = pot.read();
+
+        uint32_t interval = 50000u + (uint32_t)((800000u - 50000u) * p);
+        if (timing.tickThreshold(last_task_1_time, interval)) {
+            led1 = !led1.read();
+        }
 
 
 	}
