@@ -99,21 +99,23 @@ int main() {
 
         }
 
+        //PROJECT 2 - use the potentiometer to change the blink rate
+	float val = potentiometer1.read();
+	float scal = 900000.0;
+	float min = 100000.0;
+	int TASK_1_RATE_US = val*scal + min;
+
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
-		if (led1.read() == false) {
-			led1.write(true);
+		if (led5.read() == false) {
+			led5.write(true);
 		}
 		else{
-			led1.write(false);
+			led5.write(false);
 		}
 	}
 
 
-        //PROJECT 2 - use the potentiometer to change the blink rate
-
-
-	}
 
 	shutdown_method();
 }
