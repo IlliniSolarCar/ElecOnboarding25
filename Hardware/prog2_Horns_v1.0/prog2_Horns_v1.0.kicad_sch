@@ -476,6 +476,141 @@
 				)
 			)
 		)
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:Fuse"
 			(pin_numbers hide)
 			(pin_names
@@ -2665,6 +2800,75 @@
 		(uuid "f3ae7b04-852d-4470-8f70-2dd0acc53226")
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 82.55 120.65 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e0d5bfe-74be-48e3-8d66-d4a1a975e9c4")
+		(property "Reference" "C6"
+			(at 82.5563 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "1uF"
+			(at 82.5563 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "layout:CP_Oval_L16.0mm_W8.0mm_P11.5mm"
+			(at 82.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 82.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ea20937-a01e-4d28-b458-1975230ab32c")
+		)
+		(pin "2"
+			(uuid "26022e2c-2d51-4ff0-bd44-2f29553ca5d3")
+		)
+		(instances
+			(project "prog2_Horns_v1.0"
+				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "device:Q_PMOS_SGD")
 		(at 130.81 96.52 0)
 		(unit 1)
@@ -2692,7 +2896,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DirectFET:DirectFET_L4"
 			(at 135.89 93.98 0)
 			(effects
 				(font
@@ -2711,6 +2915,24 @@
 			)
 		)
 		(property "Description" "P-MOSFET transistor, source/gate/drain"
+			(at 130.81 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "IRFR010PBF"
+			(at 130.81 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" ""
 			(at 130.81 96.52 0)
 			(effects
 				(font
@@ -2738,33 +2960,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 82.55 105.41 270)
+		(lib_id "Device:C_Small")
+		(at 82.55 128.27 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3b3ecca5-7b07-40a1-aac3-120051e09d7a")
-		(property "Reference" "C2"
-			(at 83.0961 99.06 90)
+		(uuid "44e08866-40e8-4e48-bcb1-540a8ada1db6")
+		(property "Reference" "C8"
+			(at 82.5563 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 82.5563 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "C_Polarized_Small"
-			(at 83.0961 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 105.41 0)
+		(property "Footprint" "layout:CP_Oval_L16.0mm_W8.0mm_P11.5mm"
+			(at 82.55 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2773,7 +2996,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 105.41 0)
+			(at 82.55 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2781,8 +3004,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor, small symbol"
-			(at 82.55 105.41 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 82.55 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2791,15 +3014,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "02bf84a5-52e9-4b5a-8371-060e63760690")
+			(uuid "8b9b28ba-23e4-4b6f-893f-a6bb80d1e75e")
 		)
 		(pin "2"
-			(uuid "a6eab7cb-064f-470f-b901-76544ce28503")
+			(uuid "f50f0f85-f044-4085-8e86-e041add9e4c0")
 		)
 		(instances
-			(project ""
+			(project "prog2_Horns_v1.0"
 				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
-					(reference "C2")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -2871,6 +3094,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 82.55 105.41 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f6a901c-f311-4781-8714-b7c3be060bd4")
+		(property "Reference" "C2"
+			(at 82.5563 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "C_Small"
+			(at 82.5563 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "layout:CP_Oval_L16.0mm_W8.0mm_P11.5mm"
+			(at 82.55 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 82.55 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc0cd8c5-4a91-460c-a383-e4300772121f")
+		)
+		(pin "2"
+			(uuid "2e08c9b6-aa43-45b9-8584-a6b3b9df808f")
+		)
+		(instances
+			(project ""
+				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "device:R_US")
 		(at 83.82 87.63 90)
 		(unit 1)
@@ -2896,7 +3188,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 84.074 86.614 90)
 			(effects
 				(font
@@ -2915,6 +3207,24 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 83.82 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 83.82 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" ""
 			(at 83.82 87.63 0)
 			(effects
 				(font
@@ -2963,7 +3273,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_CLIK-Mate_502382-0370_1x03-1MP_P1.25mm_Vertical"
 			(at 68.58 96.52 0)
 			(effects
 				(font
@@ -2982,6 +3292,24 @@
 			)
 		)
 		(property "Description" "Power"
+			(at 68.58 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 68.58 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" ""
 			(at 68.58 96.52 0)
 			(effects
 				(font
@@ -3026,7 +3354,7 @@
 				)
 			)
 		)
-		(property "Value" "Fuse"
+		(property "Value" "2A"
 			(at 140.97 85.09 90)
 			(effects
 				(font
@@ -3034,7 +3362,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "layout:Fuse_Littelfuse_1206"
 			(at 140.97 90.678 90)
 			(effects
 				(font
@@ -3053,6 +3381,24 @@
 			)
 		)
 		(property "Description" "Fuse"
+			(at 140.97 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 140.97 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" ""
 			(at 140.97 88.9 0)
 			(effects
 				(font
@@ -3143,213 +3489,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 82.55 116.84 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "86fe5e65-4955-473c-a87a-a092b24706a4")
-		(property "Reference" "C5"
-			(at 83.0961 113.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 83.0961 113.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small symbol"
-			(at 82.55 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d00ece43-3123-4f67-b6a3-4b7b82d13ce9")
-		)
-		(pin "2"
-			(uuid "0624ff05-44b7-4e76-95ce-bb298f06dc67")
-		)
-		(instances
-			(project ""
-				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 82.55 124.46 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8b9e72ca-7c04-4540-8d59-4351817eace1")
-		(property "Reference" "C7"
-			(at 83.0961 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1uF"
-			(at 83.0961 120.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small symbol"
-			(at 82.55 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "051f2237-722b-43fb-9d95-169af099a7c6")
-		)
-		(pin "2"
-			(uuid "2f04ea7a-a659-4297-8a0b-5b584367d375")
-		)
-		(instances
-			(project "prog2_Horns_v1.0"
-				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 82.55 128.27 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d133686-9aea-4804-a3d9-ab45e8ee7250")
-		(property "Reference" "C8"
-			(at 83.0961 121.92 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "10uF"
-			(at 83.0961 124.46 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small symbol"
-			(at 82.55 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "66198b95-cd02-4360-8cc5-427a7603db68")
-		)
-		(pin "2"
-			(uuid "e98849e2-1c81-41b6-9ee0-7d4299e072f9")
-		)
-		(instances
-			(project "prog2_Horns_v1.0"
-				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Fuse")
 		(at 114.3 93.98 90)
 		(unit 1)
@@ -3374,7 +3513,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "layout:Fuse_Littelfuse_1206"
 			(at 114.3 95.758 90)
 			(effects
 				(font
@@ -3393,6 +3532,24 @@
 			)
 		)
 		(property "Description" "Fuse"
+			(at 114.3 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 114.3 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" ""
 			(at 114.3 93.98 0)
 			(effects
 				(font
@@ -3510,7 +3667,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_CLIK-Mate_502382-0270_1x02-1MP_P1.25mm_Vertical"
 			(at 92.71 119.38 0)
 			(effects
 				(font
@@ -3529,6 +3686,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 92.71 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" ""
 			(at 92.71 119.38 0)
 			(effects
 				(font
@@ -3577,7 +3752,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "layout:Fuse_Littelfuse_1206"
 			(at 125.73 105.918 90)
 			(effects
 				(font
@@ -3596,6 +3771,24 @@
 			)
 		)
 		(property "Description" "Fuse"
+			(at 125.73 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 125.73 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" ""
 			(at 125.73 104.14 0)
 			(effects
 				(font
@@ -3645,7 +3838,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "layout:CP_Oval_L16.0mm_W8.0mm_P11.5mm"
 			(at 93.98 87.63 0)
 			(effects
 				(font
@@ -3664,6 +3857,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 93.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 93.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" ""
 			(at 93.98 87.63 0)
 			(effects
 				(font
@@ -3715,7 +3926,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_CLIK-Mate_502382-0270_1x02-1MP_P1.25mm_Vertical"
 			(at 111.76 87.63 0)
 			(effects
 				(font
@@ -3734,6 +3945,24 @@
 			)
 		)
 		(property "Description" "HORN_CTL"
+			(at 111.76 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 111.76 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" ""
 			(at 111.76 87.63 0)
 			(effects
 				(font
@@ -3810,6 +4039,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "ES2DA-13-F"
+			(at 90.17 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" ""
+			(at 90.17 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6d606faf-4e16-4c12-a44f-ec24f8ca711c")
 		)
@@ -3826,17 +4073,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 82.55 109.22 270)
+		(lib_id "Device:C_Small")
+		(at 82.55 113.03 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "acf4bdb2-84fa-4dce-90a5-f1b49bd89107")
-		(property "Reference" "C3"
-			(at 83.0961 105.41 90)
+		(uuid "b60cdf77-65d4-454a-82b7-31921c994d9d")
+		(property "Reference" "C4"
+			(at 82.5563 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3845,16 +4092,15 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 83.0961 105.41 90)
+			(at 82.5563 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 82.55 109.22 0)
+		(property "Footprint" "layout:CP_Oval_L16.0mm_W8.0mm_P11.5mm"
+			(at 82.55 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3863,7 +4109,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 109.22 0)
+			(at 82.55 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3871,25 +4117,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor, small symbol"
-			(at 82.55 109.22 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 82.55 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "14d99a4c-b849-4118-be38-f48b8f057373")
 		)
 		(pin "1"
-			(uuid "528485e1-0eac-4a92-88cf-85b1c9c639ba")
+			(uuid "63071d07-1eee-4fdc-ba93-137f02d3073e")
+		)
+		(pin "2"
+			(uuid "27043400-2558-4be8-96b4-d7318b2a7bee")
 		)
 		(instances
-			(project ""
+			(project "prog2_Horns_v1.0"
 				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
-					(reference "C3")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -3923,7 +4169,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_CLIK-Mate_502382-0270_1x02-1MP_P1.25mm_Vertical"
 			(at 111.76 106.68 0)
 			(effects
 				(font
@@ -3950,6 +4196,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" ""
+			(at 111.76 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "764b141e-43b8-4a3f-b4a7-8b2399c37353")
 		)
@@ -3966,25 +4230,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 82.55 120.65 270)
+		(lib_id "Device:C_Small")
+		(at 82.55 116.84 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c901c983-5b50-477a-936a-b27f4abe9fcc")
-		(property "Reference" "C6"
-			(at 83.0961 116.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1uF"
-			(at 83.0961 116.84 90)
+		(uuid "c5a28e22-696f-4389-bc5f-61c06876af88")
+		(property "Reference" "C5"
+			(at 82.5563 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3992,8 +4248,16 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 82.55 120.65 0)
+		(property "Value" "1uF"
+			(at 82.5563 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "layout:CP_Oval_L16.0mm_W8.0mm_P11.5mm"
+			(at 82.55 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4002,7 +4266,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 120.65 0)
+			(at 82.55 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4010,8 +4274,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor, small symbol"
-			(at 82.55 120.65 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 82.55 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4020,15 +4284,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ef1f6ea1-1079-4426-a776-719ef82b8854")
+			(uuid "10619ce1-45d4-44be-94bb-f497c3056bca")
 		)
 		(pin "2"
-			(uuid "88ccba96-d133-475a-b8be-6d5f7da474fe")
+			(uuid "20abff48-14cb-4f50-8e30-358503f00a52")
 		)
 		(instances
 			(project "prog2_Horns_v1.0"
 				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
-					(reference "C6")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -4100,75 +4364,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 82.55 113.03 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d561a85f-1e50-493b-b773-632d744dc66a")
-		(property "Reference" "C4"
-			(at 83.0961 109.22 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 83.0961 109.22 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small symbol"
-			(at 82.55 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9ea73943-87c1-42f8-a63c-258d6c4c64d7")
-		)
-		(pin "1"
-			(uuid "73a40391-7942-45b1-ba06-f9c9331b1e4f")
-		)
-		(instances
-			(project ""
-				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+24V")
 		(at 78.74 96.52 0)
 		(unit 1)
@@ -4234,6 +4429,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 82.55 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f36ffd71-cd74-4218-9278-3382743ffd7a")
+		(property "Reference" "C3"
+			(at 82.5563 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 82.5563 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "layout:CP_Oval_L16.0mm_W8.0mm_P11.5mm"
+			(at 82.55 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 82.55 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a924e0e5-7019-4205-a258-22c1da83c8d3")
+		)
+		(pin "2"
+			(uuid "eff4b8aa-480f-4341-840b-891562d4fea8")
+		)
+		(instances
+			(project "prog2_Horns_v1.0"
+				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized_Small")
 		(at 82.55 132.08 270)
 		(unit 1)
@@ -4249,6 +4513,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Value" "100uF"
@@ -4257,9 +4522,10 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "layout:CP_Radial_D16.5mm_P5.08mm"
 			(at 82.55 132.08 0)
 			(effects
 				(font
@@ -4286,6 +4552,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 82.55 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" ""
+			(at 82.55 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5327e507-6c84-4209-afbc-aa620ae79acf")
 		)
@@ -4296,6 +4580,75 @@
 			(project "prog2_Horns_v1.0"
 				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
 					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 82.55 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8fd67d2-d76d-406b-9d71-7f78e7107842")
+		(property "Reference" "C7"
+			(at 82.5563 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "10uF"
+			(at 82.5563 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "layout:CP_Oval_L16.0mm_W8.0mm_P11.5mm"
+			(at 82.55 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 82.55 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a885401-c33e-4c02-a66c-7488e8ce61fa")
+		)
+		(pin "2"
+			(uuid "dd44e278-c8a5-4569-ab31-ffd0979ffeb1")
+		)
+		(instances
+			(project "prog2_Horns_v1.0"
+				(path "/1e1b062d-fad0-427c-a622-c5b8a80b5268"
+					(reference "C7")
 					(unit 1)
 				)
 			)
