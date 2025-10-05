@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 0.95,
+          "width": 1.075
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -439,7 +439,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "horns_v1.kicad_pro",
+    "filename": "horns_v2.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -473,8 +473,8 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
-      "plot": "",
+      "netlist": "horns_v2.net",
+      "plot": "Gerber Horns Board/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -577,7 +577,7 @@
       "meta": {
         "version": 0
       },
-      "model_mode": 0,
+      "model_mode": 4,
       "workbook_filename": ""
     },
     "page_layout_descr_file": "Title_Block.kicad_wks",
