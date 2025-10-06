@@ -10,6 +10,8 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
+#include "mbed/libraries/mbed/api/DigitalOut.h"
+#include "mbed/libraries/mbed/api/AnalogIn.h"
 
 
 /*
@@ -88,6 +90,8 @@ int main() {
 
         //clear CAN Buffer
         while(!common.readCANMessage(msg)) {
+        	float potValue = POT.read();  // Returns a float between 0.0 (min) and 1.0 (max)
+
         	//you should do something with the relevant CAN messages here
         	//toggle the CAN receive LED for only the messages you need to
         	//receive for this board to function. This should be only a few
@@ -95,12 +99,13 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(blinkInterval, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
-        }
+        	LED1 = !LED1.read();}
+
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
+        uint32_t blinkInterval = (uint32_t)(100000 + potValue * (2000000 - 100000));
 
 	}
 
