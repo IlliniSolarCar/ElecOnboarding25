@@ -3039,7 +3039,7 @@
 	)
 	(symbol
 		(lib_id "Diode:US2DA")
-		(at 93.98 31.75 90)
+		(at 93.98 31.75 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3053,7 +3053,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "Rectifier Diode"
@@ -3062,11 +3062,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 98.425 31.75 0)
+			(at 89.535 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
