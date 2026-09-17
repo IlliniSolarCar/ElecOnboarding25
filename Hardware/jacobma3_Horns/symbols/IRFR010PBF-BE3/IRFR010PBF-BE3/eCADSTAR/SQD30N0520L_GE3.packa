@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "IRFR010PBF-BE3"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-08-24-08:38:29)
+    (mountForm default
+        (footprintRef "SQD30N0520L_GE3")
+        (spec "System")
+    )
+)

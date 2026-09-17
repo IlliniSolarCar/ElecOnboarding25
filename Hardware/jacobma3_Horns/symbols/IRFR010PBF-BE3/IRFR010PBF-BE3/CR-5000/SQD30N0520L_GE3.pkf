@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "SQD30N0520L_GE3"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "SQD30N0520L_GE3")
+        (spec "default")
+    )
+)

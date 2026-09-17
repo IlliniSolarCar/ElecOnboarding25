@@ -1,0 +1,9 @@
+Manufacturer=Vishay
+PartNumber=IRFR010PBF-BE3
+PartCategory=MOSFET (N-Channel)
+PackageCategory=Other
+PinCount=3
+Version=2.1
+Released=2018-10-15 11:18:34
+Downloaded=2026-09-16 01:49:18
+3D=Y
