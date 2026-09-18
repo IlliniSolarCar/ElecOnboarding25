@@ -20,6 +20,11 @@
 // PROJECT 1 - You can change the macro name to something more descriptive if you'd like
 #define TASK_1_RATE_US 1000000
 
+//PROJECT 2 DECLARATIONS
+
+#define BLINK_RATE_MIN_US 100000
+#define BLINK_RATE_MAX_US 2000000
+
 
 
 #endif /* SETUP_H_ */
