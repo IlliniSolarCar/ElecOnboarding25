@@ -43,6 +43,10 @@ void setup() {
 	//set up LEDs and turn them all off
 	common.setupLEDs(&led1, &led2, &led3, &led4);
 
+	DigitalOut myLed(P_LED);
+
+
+
 	//Set Callbacks:
 	//These are side tasks (up to 8) that are run independently of the main
 	//algorithm / purpose of this board such as the heartbeat.
@@ -97,6 +101,14 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+
+        	int value;
+        	int newValue;
+
+        	value = myLed.read();
+        	newValue = !value;
+        	myLed.write(newValue);
+//        	mbed.DigitalOut(P0_4, newValue);
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
