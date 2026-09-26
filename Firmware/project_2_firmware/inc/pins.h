@@ -44,7 +44,7 @@ extern DigitalOut test_led;
  */
 
 // Potentiometer
-#define P_POT P0_23
+// #define P_POT P0_23
 
 
 /*
@@ -52,5 +52,5 @@ extern DigitalOut test_led;
  */
 
 // Potentiometer
-extern AnalogIn pot;
+// extern AnalogIn pot;
 #endif // __MBED1549_SKELETON_PINS_H__
