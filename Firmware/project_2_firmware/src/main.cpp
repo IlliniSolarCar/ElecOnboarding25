@@ -10,8 +10,7 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
-#include "pins.h"
-#include "setup.h"
+
 
 /*
  * This is an example function. It blinks the heartbeat LED and sends
@@ -77,7 +76,6 @@ int main() {
 	// Configure all of our peripherals and globals
 	setup();
 	uint32_t last_task_1_time = timing.onTick(NULL);
-	uint32_t current_rate = TASK_1_RATE_US;
 
 	CANMessage msg;
 	bool shutdown = false;
@@ -97,23 +95,19 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
- rjosh40_onboarding
-        if(timing.tickThreshold(last_task_1_time, current_rate)){
-        	//PROJECT 1 - add code here to actually make the LED blink
-        	heartbeat_led = !heartbeat_led;
+        //project 1 block
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        	// toggle
+        	test_led = !test_led;
         }
 
-        //PROJECT 2 - use the potentiometer to change the blink rate
-        current_rate = (uint32_t)(100000 + potentiometer.read() * 1900000);
+        // Project 2 block
+        // uint32_t blink_rate = (uint32_t)(100000 + pot.read() * 1900000);
+        // if(timing.tickThreshold(last_task_1_time, blink_rate)){
+        //     test_led = !test_led;
+        // }
 
 
-        uint32_t blink_rate = (uint32_t)(100000 + pot.read() * 1900000);
-        if(timing.tickThreshold(last_task_1_time, blink_rate)){
-            test_led = !test_led;
-        }
-
-
- main
 	}
 
 	shutdown_method();

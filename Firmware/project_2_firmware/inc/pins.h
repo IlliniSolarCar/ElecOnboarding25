@@ -25,14 +25,9 @@
 #define P_LED2 P0_5
 #define P_LED3 P0_6
 #define P_LED4 P0_7
- rjosh40_onboarding
-// PROJECT 1 - You can define a pin macro here
-#define P_HEARTBEAT_LED P0_4
-
 // LED
 #define P_TEST_LED P0_4
 
- main
 /*
  * COMMON PIN OBJECT DECLARATIONS
  */
@@ -41,36 +36,21 @@ extern DigitalOut led1;
 extern DigitalOut led2;
 extern DigitalOut led3;
 extern DigitalOut led4;
- rjosh40_onboarding
-// PROJECT 1 - You can declare a DigitalOut object here
-extern DigitalOut heartbeat_led;
-
 // LED
 extern DigitalOut test_led;
 
- main
 /*
  * BOARD SPECIFIC PINS
  */
 
 // Potentiometer
-#define P_POT P0_23
-
-extern AnalogIn potentiometer;
+// #define P_POT P0_23
 
 
 /*
  * BOARD SPECIFIC PIN OBJECT DECLARATIONS
  */
 
- rjosh40_onboarding
-#define P_POTENTIOMETER P0_23
-
-
-
-
-
 // Potentiometer
-extern AnalogIn pot;
- main
+// extern AnalogIn pot;
 #endif // __MBED1549_SKELETON_PINS_H__
