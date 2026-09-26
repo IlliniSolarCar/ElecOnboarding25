@@ -248,7 +248,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "1.0"
+      "sch_revision": ""
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -534,7 +534,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "./",
+      "netlist": "",
       "plot": "",
       "specctra_dsn": "",
       "step": "",
@@ -544,132 +544,11 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "annotation": {
-      "method": 0,
-      "sort_order": 0
-    },
-    "bom_export_filename": "${PROJECTNAME}.csv",
-    "bom_fmt_presets": [],
-    "bom_fmt_settings": {
-      "field_delimiter": ",",
-      "keep_line_breaks": false,
-      "keep_tabs": false,
-      "name": "CSV",
-      "ref_delimiter": ",",
-      "ref_range_delimiter": "",
-      "string_delimiter": "\""
-    },
-    "bom_presets": [],
-    "bom_settings": {
-      "exclude_dnp": false,
-      "fields_ordered": [
-        {
-          "group_by": false,
-          "label": "Reference",
-          "name": "Reference",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Value",
-          "name": "Value",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "DNP",
-          "name": "${DNP}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Exclude from BOM",
-          "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Exclude from Board",
-          "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Exclude from Simulation",
-          "name": "${EXCLUDE_FROM_SIM}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Exclude from Position Files",
-          "name": "${EXCLUDE_FROM_POS_FILES}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Footprint",
-          "name": "Footprint",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MPN",
-          "name": "MPN",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Notes",
-          "name": "Notes",
-          "show": false
-        }
-      ],
-      "filter_string": "",
-      "group_symbols": true,
-      "include_excluded_from_bom": true,
-      "name": "",
-      "sort_asc": true,
-      "sort_field": "Reference"
-    },
     "bus_aliases": {},
-    "connection_grid_size": 50.0,
     "drawing": {
-      "dashed_lines_dash_length_ratio": 12.0,
-      "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
-      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -677,11 +556,6 @@
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
       "label_size_ratio": 0.375,
-      "operating_point_overlay_i_precision": 3,
-      "operating_point_overlay_i_range": "~A",
-      "operating_point_overlay_v_precision": 3,
-      "operating_point_overlay_v_range": "~V",
-      "overbar_offset_ratio": 1.23,
       "pin_symbol_size": 25.0,
       "text_offset_ratio": 0.15
     },
@@ -697,12 +571,11 @@
       "meta": {
         "version": 0
       },
-      "model_mode": 4,
+      "model_mode": 0,
       "workbook_filename": ""
     },
     "page_layout_descr_file": "Title_Block.kicad_wks",
     "plot_directory": "",
-    "reuse_designators": true,
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
@@ -711,16 +584,14 @@
       {
         "filename": "Template_v0.0.kicad_sch",
         "name": "Template_v0.0",
-        "uuid": "1e1b062d-fad0-427c-a622-c5b8a80b5268"
+        "uuid": "00000000-0000-0000-0000-000000000000"
       }
-    ],
-    "used_designators": "#PWR1-2,D1,BT1,#FLG1-2,J1,R1-2,SW1",
-    "variants": []
+    ]
   },
   "sheets": [
     [
       "1e1b062d-fad0-427c-a622-c5b8a80b5268",
-      "Template_v0.0"
+      ""
     ]
   ],
   "text_variables": {},
