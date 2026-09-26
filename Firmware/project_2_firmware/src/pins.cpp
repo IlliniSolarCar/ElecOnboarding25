@@ -12,8 +12,8 @@
  * PIN OBJECT INSTANTIATIONS
  */
 
-//Potentiometer
-AnalogIn pot(P_POT);
+// Potentiometer
+// AnalogIn pot(P_POT);
 
 /*
  * COMMON PIN OBJECT INSTANTIATIONS
@@ -25,5 +25,9 @@ DigitalOut led3(P_LED3);
 DigitalOut led4(P_LED4);
 
 // Project 1: test LED output
+DigitalOut test_led(P_TEST_LED);
+
+// Project 2: potentiometer input
+AnalogIn pot(P_POT);
 // LED
 DigitalOut test_led(P_TEST_LED);

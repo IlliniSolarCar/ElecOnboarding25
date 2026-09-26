@@ -20,4 +20,15 @@
 // 1000000 us = 1 second, so the LED blinks once per second (on for 1s, off for 1s).
 #define LED_BLINK_RATE_US 1000000
 
+// Project 2 - the potentiometer scales the blink toggle period between these
+// two bounds (in microseconds). Pot fully one direction -> fast blink,
+// fully the other direction -> slow blink.
+#define MIN_BLINK_RATE_US 100000    // 0.1s per toggle -> fast blink
+#define MAX_BLINK_RATE_US 2000000   // 2.0s per toggle -> slow blink
+//task 1 rate
+// PROJECT 1 - You can change the macro name to something more descriptive if you'd like
+#define TASK_1_RATE_US 1000000
+
+
+
 #endif /* SETUP_H_ */

@@ -97,18 +97,28 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        // Project 1: every LED_BLINK_RATE_US microseconds, tickThreshold()
-        // returns true (and resets last_task_1_time), so this flips the
-        // test LED's output state, producing a 1-second on/1-second off blink.
-        if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE_US)) {
+        // Project 2: read the potentiometer (0.0 - 1.0) and use it to scale
+        // the toggle period between MIN_BLINK_RATE_US (fast) and
+        // MAX_BLINK_RATE_US (slow). This is recomputed every loop so turning
+        // the knob immediately changes the blink speed.
+        uint32_t blink_rate_us = MIN_BLINK_RATE_US +
+        		(uint32_t)(pot.read() * (MAX_BLINK_RATE_US - MIN_BLINK_RATE_US));
+
+        if(timing.tickThreshold(last_task_1_time, blink_rate_us)) {
         	test_led = !test_led;
         }
 
-
-        uint32_t blink_rate = (uint32_t)(100000 + pot.read() * 1900000);
-        if(timing.tickThreshold(last_task_1_time, blink_rate)){
-            test_led = !test_led;
+        //project 1 block
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        	// toggle
+        	test_led = !test_led;
         }
+
+        // Project 2 block
+        // uint32_t blink_rate = (uint32_t)(100000 + pot.read() * 1900000);
+        // if(timing.tickThreshold(last_task_1_time, blink_rate)){
+        //     test_led = !test_led;
+        // }
 
 
 	}
