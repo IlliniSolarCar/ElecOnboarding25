@@ -10,6 +10,7 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
+#include "pins.h"
 
 
 /*
@@ -76,6 +77,8 @@ int main() {
 	// Configure all of our peripherals and globals
 	setup();
 	uint32_t last_task_1_time = timing.onTick(NULL);
+	
+	unit32_t blink_rate = BLINK_RATE;
 
 	CANMessage msg;
 	bool shutdown = false;
@@ -95,12 +98,13 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
-        }
-
         //PROJECT 2 - use the potentiometer to change the blink rate
-
+        blink_rate = (pot.read() * (BLINK_RATE_MAX - BLINK_RATE_MIN)) + BLINK_RATE_MIN;
+        
+        if(timing.tickThreshold(last_task_1_time, blink_rate)){
+        	//PROJECT 1 - add code here to actually make the LED blink
+        	proj_led.write(!proj_led)
+        }
 
 	}
 
