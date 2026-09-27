@@ -6,6 +6,8 @@
 #include <mbed.h>
 // PROJECT 1 - Include something here!
 #include "peripherals.h"
+#include "pins.h"
+#include "setup.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
@@ -76,6 +78,7 @@ int main() {
 	// Configure all of our peripherals and globals
 	setup();
 	uint32_t last_task_1_time = timing.onTick(NULL);
+	uint32_t blinking_rate = TASK_1_RATE_US;
 
 	CANMessage msg;
 	bool shutdown = false;
@@ -95,12 +98,13 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, blinking_rate)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	ProjectLED = !ProjectLED;
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
+        blinking_rate = TASK_1_RATE_US + potentiometer.read()*1000000;
 
 	}
 
