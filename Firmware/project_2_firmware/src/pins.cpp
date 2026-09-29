@@ -12,7 +12,7 @@
  * PIN OBJECT INSTANTIATIONS
  */
 
-//Potentiometer
+// Potentiometer
 AnalogIn pot(P_POT);
 
 /*

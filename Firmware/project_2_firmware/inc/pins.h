@@ -8,9 +8,7 @@
  * #define P_LED_FOO P2_4
  *
  * You should place those definitions here.
- * 
  */
-
 
 #ifndef MBED15X9_SKELETON_PINS_H_
 #define MBED15X9_SKELETON_PINS_H_
