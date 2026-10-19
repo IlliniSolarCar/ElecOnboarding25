@@ -1,0 +1,200 @@
+Info: Processing symbol 'C1:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C8:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C6:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C9:Capacitor_THT:CP_Radial_D8.0mm_P5.00mm'.
+Info: Processing symbol 'C2:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C4:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C5:Capacitor_SMD:C_0805_2012Metric'.
+Info: Total warnings: 0, errors: 0.
+Info: Processing symbol 'C3:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C7:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'D1:Diode_SMD:D_SMA'.
+Info: Processing symbol 'F1:Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder'.
+Info: Processing symbol 'J1:Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'J2:Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical'.
+Info: Processing symbol 'Q1:Package_TO_SOT_SMD:TO-252-2'.
+Info: Processing symbol 'J3:Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'J4:Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'R1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Add net GND.
+Connected C1 pin 2 to GND.
+Add net /Horn_ctrl.
+Connected C1 pin 1 to /Horn_ctrl.
+Added C2 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Changed REF** reference designator to C2.
+Changed C2 value from C_0805_2012Metric to 0.1uF.
+Updated C2 symbol association from  to /2f9d2b4d-3965-400a-aa68-b43b47da0dc2.
+Updated C2 fields.
+Updated C2 sheetname to '/'.
+Updated C2 sheetfile to 'Hornsboard.kicad_sch'.
+Updated C2 footprint filters to 'C_*'.
+Add net +24V.
+Connected C2 pin 1 to +24V.
+Added C3 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Changed REF** reference designator to C3.
+Changed C3 value from C_0805_2012Metric to 0.1uF.
+Updated C3 symbol association from  to /b4938ec7-f98d-4f6d-b98a-42d1bf748ea9.
+Updated C3 fields.
+Updated C3 sheetname to '/'.
+Updated C3 sheetfile to 'Hornsboard.kicad_sch'.
+Updated C3 footprint filters to 'C_*'.
+Connected C3 pin 2 to GND.
+Connected C3 pin 1 to +24V.
+Added C4 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Changed REF** reference designator to C4.
+Changed C4 value from C_0805_2012Metric to 0.1uF.
+Updated C4 symbol association from  to /c49a368b-f61f-40a4-b5b6-e6943fd2b96e.
+Updated C4 fields.
+Updated C4 sheetname to '/'.
+Updated C4 sheetfile to 'Hornsboard.kicad_sch'.
+Updated C4 footprint filters to 'C_*'.
+Connected C4 pin 1 to +24V.
+Connected C4 pin 2 to GND.
+Added C5 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Changed REF** reference designator to C5.
+Changed C5 value from C_0805_2012Metric to 1uF.
+Updated C5 symbol association from  to /c1c69e5a-bb78-4fc5-bf6a-1ff3f8243651.
+Updated C5 fields.
+Updated C5 sheetname to '/'.
+Updated C5 sheetfile to 'Hornsboard.kicad_sch'.
+Updated C5 footprint filters to 'C_*'.
+Connected C5 pin 1 to +24V.
+Connected C5 pin 2 to GND.
+Added C6 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Changed REF** reference designator to C6.
+Changed C6 value from C_0805_2012Metric to 1uF.
+Updated C6 symbol association from  to /171eecd4-4ca3-4b89-96fc-7dd51b9d702c.
+Updated C6 fields.
+Updated C6 sheetname to '/'.
+Updated C6 sheetfile to 'Hornsboard.kicad_sch'.
+Updated C6 footprint filters to 'C_*'.
+Connected C6 pin 2 to GND.
+Connected C6 pin 1 to +24V.
+Added C7 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Changed REF** reference designator to C7.
+Changed C7 value from C_0805_2012Metric to 10uF.
+Updated C7 symbol association from  to /24004e7b-f55f-4593-81ea-7c2a6393987b.
+Updated C7 fields.
+Updated C7 sheetname to '/'.
+Updated C7 sheetfile to 'Hornsboard.kicad_sch'.
+Updated C7 footprint filters to 'C_*'.
+Connected C7 pin 2 to GND.
+Connected C7 pin 1 to +24V.
+Added C8 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Changed REF** reference designator to C8.
+Changed C8 value from C_0805_2012Metric to 10uF.
+Updated C8 symbol association from  to /9bc6b981-a926-43d2-8369-bdf4b21e0124.
+Updated C8 fields.
+Updated C8 sheetname to '/'.
+Updated C8 sheetfile to 'Hornsboard.kicad_sch'.
+Updated C8 footprint filters to 'C_*'.
+Connected C8 pin 1 to +24V.
+Connected C8 pin 2 to GND.
+Added C9 (footprint 'Capacitor_THT:CP_Radial_D8.0mm_P5.00mm').
+Changed REF** reference designator to C9.
+Changed C9 value from CP_Radial_D8.0mm_P5.00mm to 100uF.
+Updated C9 symbol association from  to /64435cbf-90c0-4167-bf95-f2dfd3a9a492.
+Updated C9 fields.
+Updated C9 sheetname to '/'.
+Connected C2 pin 2 to GND.
+Updated C9 footprint filters to 'CP_*'.
+Connected C9 pin 1 to +24V.
+Connected C9 pin 2 to GND.
+Added C1 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Added D1 (footprint 'Diode_SMD:D_SMA').
+Changed REF** reference designator to D1.
+Changed D1 value from D_SMA to ES2DA-13-F.
+Updated D1 symbol association from  to /b0dfbbbc-6ec6-4817-b5fb-a6eeb8b387fd.
+Updated D1 fields.
+Updated D1 sheetname to '/'.
+Updated D1 sheetfile to 'Hornsboard.kicad_sch'.
+Updated D1 footprint filters to 'TO-???* *_Diode_* *SingleDiode* D_*'.
+Connected D1 pin 1 to +24V.
+Add net /Horn_in.
+Connected D1 pin 2 to /Horn_in.
+Changed REF** reference designator to C1.
+Added F1 (footprint 'Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder').
+Changed REF** reference designator to F1.
+Changed F1 value from Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder to 2A.
+Updated F1 symbol association from  to /525b3a91-2e72-4329-9d27-c958ce2dfd1d.
+Updated F1 fields.
+Updated F1 sheetname to '/'.
+Updated F1 sheetfile to 'Hornsboard.kicad_sch'.
+Updated F1 footprint filters to '*Fuse*'.
+Add net Net-(Q1-D).
+Connected F1 pin 1 to Net-(Q1-D).
+Connected F1 pin 2 to /Horn_in.
+Changed C1 value from C_0805_2012Metric to 0.1uF.
+Added J1 (footprint 'Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical').
+Changed REF** reference designator to J1.
+Changed J1 value from Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical to Conn_01x02.
+Updated J1 symbol association from  to /e7d501e8-7263-45f0-93a8-3c1bedd9d8cc.
+Updated J1 fields.
+Updated J1 sheetname to '/'.
+Updated J1 sheetfile to 'Hornsboard.kicad_sch'.
+Updated J1 footprint filters to 'Connector*:*_1x??_*'.
+Connected J1 pin 1 to GND.
+Connected J1 pin 2 to /Horn_ctrl.
+Updated C1 symbol association from  to /3aabfc5e-b75d-450b-a7e1-8f7318b3373b.
+Added J2 (footprint 'Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical').
+Changed REF** reference designator to J2.
+Changed J2 value from Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical to Conn_01x03.
+Updated J2 symbol association from  to /27b006ce-9bba-45b6-8041-cb4e351933ac.
+Updated J2 fields.
+Updated J2 sheetname to '/'.
+Updated J2 sheetfile to 'Hornsboard.kicad_sch'.
+Updated J2 footprint filters to 'Connector*:*_1x??_*'.
+Connected J2 pin 3 to GND.
+Connected J2 pin 1 to GND.
+Updated C1 fields.
+Updated C1 sheetname to '/'.
+Added J3 (footprint 'Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical').
+Changed REF** reference designator to J3.
+Changed J3 value from Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical to Conn_01x02.
+Updated J3 symbol association from  to /91eb8224-437b-452b-9b90-9116c90f0161.
+Updated J3 fields.
+Updated J3 sheetname to '/'.
+Updated J3 sheetfile to 'Hornsboard.kicad_sch'.
+Updated J3 footprint filters to 'Connector*:*_1x??_*'.
+Add net Net-(J3-Pin_2).
+Connected J3 pin 2 to Net-(J3-Pin_2).
+Connected J3 pin 1 to +24V.
+Updated C1 sheetfile to 'Hornsboard.kicad_sch'.
+Added J4 (footprint 'Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical').
+Changed REF** reference designator to J4.
+Changed J4 value from Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical to Conn_01x02.
+Updated J4 symbol association from  to /939abeba-03b0-4c52-b4b5-92a9d9a8a7a2.
+Updated J4 fields.
+Updated J4 sheetname to '/'.
+Updated J4 sheetfile to 'Hornsboard.kicad_sch'.
+Updated J4 footprint filters to 'Connector*:*_1x??_*'.
+Connected J4 pin 2 to /Horn_in.
+Connected J4 pin 1 to Net-(J3-Pin_2).
+Updated C9 sheetfile to 'Hornsboard.kicad_sch'.
+Added Q1 (footprint 'Package_TO_SOT_SMD:TO-252-2').
+Changed REF** reference designator to Q1.
+Changed Q1 value from TO-252-2 to Q_NMOS_GDS.
+Updated Q1 symbol association from  to /1fff971c-c5e3-47bf-ac66-0cee00f973b3.
+Updated Q1 fields.
+Updated Q1 sheetname to '/'.
+Updated Q1 sheetfile to 'Hornsboard.kicad_sch'.
+Connected Q1 pin 3 to GND.
+Connected Q1 pin 1 to /Horn_ctrl.
+Connected Q1 pin 2 to Net-(Q1-D).
+Updated C1 footprint filters to 'C_*'.
+Added R1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R1.
+Changed R1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 1k.
+Updated R1 symbol association from  to /42da9015-d073-4451-815a-59ce0a64f3ff.
+Updated R1 fields.
+Updated R1 sheetname to '/'.
+Updated R1 sheetfile to 'Hornsboard.kicad_sch'.
+Updated R1 footprint filters to 'R_*'.
+Connected R1 pin 2 to GND.
+Connected R1 pin 1 to /Horn_ctrl.
+
+
+Connected J2 pin 2 to +24V.
+
+
+Info: Total warnings: 0, errors: 0.
