@@ -1,0 +1,29 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,10.0.6*%
+%TF.CreationDate,2026-09-16T22:28:45-05:00*%
+%TF.ProjectId,Horns_v1.0,486f726e-735f-4763-912e-302e6b696361,0.0*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Soldermask,Bot*%
+%TF.FilePolarity,Negative*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 10.0.6) date 2026-09-16 22:28:45*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10C,3.200000*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,REF\u002A\u002A*%
+X140000000Y-95000000D03*
+%TD*%
+%TO.C,REF\u002A\u002A*%
+X116000000Y-73000000D03*
+%TD*%
+%TO.C,REF\u002A\u002A*%
+X116000000Y-95000000D03*
+%TD*%
+%TO.C,REF\u002A\u002A*%
+X140000000Y-73000000D03*
+%TD*%
+M02*
