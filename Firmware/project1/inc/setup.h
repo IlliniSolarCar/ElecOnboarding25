@@ -20,6 +20,9 @@
 // PROJECT 1 - You can change the macro name to something more descriptive if you'd like
 #define TASK_1_RATE_US 1000000
 
+//task 2 rate
+// PROJECT 2
+#define MIN_TASK_1_RATE_US 100000
 
 
 #endif /* SETUP_H_ */
